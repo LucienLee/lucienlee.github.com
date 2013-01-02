@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[self efficacy]]></title>
-  <link href="http://lucienlee.github.com/atom.xml" rel="self"/>
-  <link href="http://lucienlee.github.com/"/>
-  <updated>2013-01-02T08:17:24+08:00</updated>
-  <id>http://lucienlee.github.com/</id>
+  <link href="http://LucienLee.github.com/atom.xml" rel="self"/>
+  <link href="http://LucienLee.github.com/"/>
+  <updated>2013-01-02T08:34:32+08:00</updated>
+  <id>http://LucienLee.github.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
     
