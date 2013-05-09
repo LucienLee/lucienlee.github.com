@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 前端浮華 | Self Efficacy]]></title>
-  <link href="http://LucienLee.github.com/blog/categories/%E5%89%8D%E7%AB%AF%E6%B5%AE%E8%8F%AF/atom.xml" rel="self"/>
-  <link href="http://LucienLee.github.com/"/>
-  <updated>2013-05-10T02:02:00+08:00</updated>
-  <id>http://LucienLee.github.com/</id>
+  <link href="http://selfecy.com/blog/categories/%E5%89%8D%E7%AB%AF%E6%B5%AE%E8%8F%AF/atom.xml" rel="self"/>
+  <link href="http://selfecy.com/"/>
+  <updated>2013-05-10T02:10:43+08:00</updated>
+  <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[[RD水電工不會修水管] 電子報一次就上手]]></title>
-    <link href="http://LucienLee.github.com/blog/2013/04/25/how-to-make-the-edm/"/>
+    <link href="http://selfecy.com/blog/2013/04/25/how-to-make-the-edm/"/>
     <updated>2013-04-25T01:39:00+08:00</updated>
-    <id>http://LucienLee.github.com/blog/2013/04/25/how-to-make-the-edm</id>
+    <id>http://selfecy.com/blog/2013/04/25/how-to-make-the-edm</id>
     <content type="html"><![CDATA[<p><img src="http://farm9.staticflickr.com/8532/8677674341_d95c6ae4a3_c.jpg" alt="e-paper" /></p>
 
 <h2>前言</h2>

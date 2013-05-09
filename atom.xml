@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Self Efficacy]]></title>
-  <link href="http://LucienLee.github.com/atom.xml" rel="self"/>
-  <link href="http://LucienLee.github.com/"/>
-  <updated>2013-05-10T02:02:00+08:00</updated>
-  <id>http://LucienLee.github.com/</id>
+  <link href="http://selfecy.com/atom.xml" rel="self"/>
+  <link href="http://selfecy.com/"/>
+  <updated>2013-05-10T02:10:43+08:00</updated>
+  <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[[RD水電工不會修水管] 電子報一次就上手]]></title>
-    <link href="http://LucienLee.github.com/blog/2013/04/25/how-to-make-the-edm/"/>
+    <link href="http://selfecy.com/blog/2013/04/25/how-to-make-the-edm/"/>
     <updated>2013-04-25T01:39:00+08:00</updated>
-    <id>http://LucienLee.github.com/blog/2013/04/25/how-to-make-the-edm</id>
+    <id>http://selfecy.com/blog/2013/04/25/how-to-make-the-edm</id>
     <content type="html"><![CDATA[<p><img src="http://farm9.staticflickr.com/8532/8677674341_d95c6ae4a3_c.jpg" alt="e-paper" /></p>
 
 <h2>前言</h2>
@@ -114,9 +114,9 @@
   
   <entry>
     <title type="html"><![CDATA[[RD水電工不會修水管] Git 簡單使用情境教學]]></title>
-    <link href="http://LucienLee.github.com/blog/2013/03/25/git_workflow/"/>
+    <link href="http://selfecy.com/blog/2013/03/25/git_workflow/"/>
     <updated>2013-03-25T15:57:00+08:00</updated>
-    <id>http://LucienLee.github.com/blog/2013/03/25/git_workflow</id>
+    <id>http://selfecy.com/blog/2013/03/25/git_workflow</id>
     <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a></p>
 
 <h2>前言</h2>

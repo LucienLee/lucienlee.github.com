@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://LucienLee.github.com/blog/2013/03/25/git_workflow/</loc>
+        <loc>http://selfecy.com/blog/2013/03/25/git_workflow/</loc>
         <lastmod>2013-05-10T01:51:54+08:00</lastmod>
     </url>
     <url>
-        <loc>http://LucienLee.github.com/blog/2013/04/25/how-to-make-the-edm/</loc>
+        <loc>http://selfecy.com/blog/2013/04/25/how-to-make-the-edm/</loc>
         <lastmod>2013-05-10T01:53:54+08:00</lastmod>
     </url>
     <url>
-        <loc>http://LucienLee.github.com/blog/archives/</loc>
+        <loc>http://selfecy.com/blog/archives/</loc>
         <lastmod>2013-05-10T01:53:54+08:00</lastmod>
     </url>
     <url>
-        <loc>http://LucienLee.github.com/</loc>
+        <loc>http://selfecy.com/</loc>
         <lastmod>2013-05-10T01:53:54+08:00</lastmod>
     </url>
     <url>
-        <loc>http://LucienLee.github.com/robots.txt</loc>
+        <loc>http://selfecy.com/robots.txt</loc>
         <lastmod>2013-05-09T20:31:51+08:00</lastmod>
     </url>
 </urlset>
