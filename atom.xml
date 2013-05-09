@@ -4,7 +4,7 @@
   <title><![CDATA[Self Efficacy]]></title>
   <link href="http://LucienLee.github.com/atom.xml" rel="self"/>
   <link href="http://LucienLee.github.com/"/>
-  <updated>2013-05-10T00:20:55+08:00</updated>
+  <updated>2013-05-10T01:05:09+08:00</updated>
   <id>http://LucienLee.github.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -190,9 +190,9 @@ git merge x-plan
 
 <h3>參考資料</h3>
 
-<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a>
-<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a>
-<a href="http://try.github.com/">Try Git</a>
+<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a><br/>
+<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a><br/>
+<a href="http://try.github.com/">Try Git</a><br/>
 <a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/">Git 情境劇</a></p>
 ]]></content>
   </entry>
