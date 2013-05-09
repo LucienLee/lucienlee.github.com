@@ -4,7 +4,7 @@
   <title><![CDATA[Self Efficacy]]></title>
   <link href="http://LucienLee.github.com/atom.xml" rel="self"/>
   <link href="http://LucienLee.github.com/"/>
-  <updated>2013-05-09T21:15:20+08:00</updated>
+  <updated>2013-05-09T23:43:01+08:00</updated>
   <id>http://LucienLee.github.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -41,8 +41,6 @@ Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好�
 <!--more-->
 
 
-<hr />
-
 <h2>安裝Git</h2>
 
 <p>請參考 Github 官網</p>
@@ -53,8 +51,6 @@ Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好�
 <li><a href="http://help.github.com/linux-set-up-git/">Linux setup git</a></li>
 </ul>
 
-
-<hr />
 
 <h2>設定</h2>
 
@@ -68,8 +64,6 @@ git config --global user.email "your_email@whatever.com"
 
 <pre><code>git config --global color.ui true
 </code></pre>
-
-<hr />
 
 <h2>讓我們開始使用Git吧！</h2>
 
@@ -130,8 +124,6 @@ git config --global user.email "your_email@whatever.com"
 <pre><code>git commit -v
 </code></pre>
 
-<hr />
-
 <h2>在分支上開發</h2>
 
 <p>branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同人同時開發不同部分最後再合併（merge）起來。舉例來說，當我們要開發新功能或是要修正某個 Bug，甚至有時候想要些一些測試的程式來玩玩看，我們可以利用 branch 保持開發環境乾淨。</p>
@@ -178,8 +170,6 @@ git merge x-plan
 <pre><code>git stash clear
 </code></pre>
 
-<hr />
-
 <h2>小結</h2>
 
 <p>簡易的Git工作流程大概是這樣子的：</p>
@@ -200,13 +190,10 @@ git merge x-plan
 
 <h3>參考資料</h3>
 
-<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a></p>
-
-<p><a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a></p>
-
-<p><a href="http://try.github.com/">Try Git</a></p>
-
-<p><a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/">Git 情境劇</a></p>
+<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a>
+<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a>
+<a href="http://try.github.com/">Try Git</a>
+<a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/">Git 情境劇</a></p>
 ]]></content>
   </entry>
   
