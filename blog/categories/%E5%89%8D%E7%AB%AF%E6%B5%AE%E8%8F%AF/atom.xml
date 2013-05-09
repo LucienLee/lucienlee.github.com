@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 前端浮華 | Self Efficacy]]></title>
   <link href="http://selfecy.com/blog/categories/%E5%89%8D%E7%AB%AF%E6%B5%AE%E8%8F%AF/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-05-10T02:10:43+08:00</updated>
+  <updated>2013-05-10T02:13:09+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -29,6 +29,9 @@
 <p>而隨著新服務的推出，最近發行呼叫師傅也跟著發出第一期電子報，讓用戶們可以看到自己家裡可以怎麼改造。</p>
 
 <p>我在這次機會中第一次體驗到如何製作電子報，雖然他本質上就是一個 html 網頁，但是還是有些不同，以下將為各位娓娓道來電子報的小心得。</p>
+
+<!--more-->
+
 
 <h2>電子報與一般網頁的不同</h2>
 
