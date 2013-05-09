@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://LucienLee.github.com
+url: http://selfecy.com
 title: Self Efficacy
-subtitle:
+subtitle: "Think as User, Sketch as Designer, Do as Hacker."
 author: Lucien Lee
 simple_search: http://google.com/search
-description:
+description: 專注在前端開發、網頁設計以及人機互動，相信我們藉由一小步一小步的成功來改變世界。
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

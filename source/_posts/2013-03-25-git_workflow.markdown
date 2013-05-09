@@ -3,11 +3,13 @@ layout: post
 title: "[RD水電工不會修水管] Git 簡單使用情境教學"
 date: 2013-03-25 15:57
 comments: true
-categories: 開發工具
+categories: [開發工具,RD水電工不會修水管]
 ---
+<a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a>
+
 ##前言
 
-<a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a>
+_[RD水電工不會修水管](http://localhost:4000/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/)專欄是我在5945呼叫師傅作為RD實習生的學習分享。_
 
 Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後，幫你時光倒流回到之前的樣子。
 總結來說Git有以下幾點特色：
@@ -159,18 +161,16 @@ branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同
 ![workflow](http://farm9.staticflickr.com/8523/8673174076_b2aa77a843_z.jpg)
 
 至於要做到什麼進度才提交一次呢？通常是完成一個階段性的小工作，便會做一次 commit ，或是開發中間到了有小功能可以正常執行的新進展。
-
-
-
-
-
-
+  
+   
 
 ###參考資料
 
-[GIT IMMERSION](https://gitimmersion-apputu.rhcloud.com/index.html)
-[Git 教育訓練課程投影片 by ihover](http://ihower.tw/blog/archives/6696)
-[Try Git](http://try.github.com/)
+[GIT IMMERSION](https://gitimmersion-apputu.rhcloud.com/index.html)  
+[Git 教育訓練課程投影片 by ihover](http://ihower.tw/blog/archives/6696)  
+[Try Git](http://try.github.com/)  
 [Git 情境劇](http://blog.gogojimmy.net/2012/02/29/git-scenario/)
 
+  
+_(本篇同步刊載於[5945呼叫師傅-部落格](5945.tw/blog))_
 [TonyQ]: https://www.facebook.com/tonylovejava
