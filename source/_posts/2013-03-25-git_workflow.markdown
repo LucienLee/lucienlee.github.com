@@ -3,7 +3,7 @@ layout: post
 title: "[RD水電工不會修水管] Git 簡單使用情境教學"
 date: 2013-03-25 15:57
 comments: true
-categories: 
+categories: Open
 ---
 ##前言
 
