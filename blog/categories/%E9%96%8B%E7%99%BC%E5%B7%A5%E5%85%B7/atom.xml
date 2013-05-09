@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Self Efficacy]]></title>
-  <link href="http://LucienLee.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 開發工具 | Self Efficacy]]></title>
+  <link href="http://LucienLee.github.com/blog/categories/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/atom.xml" rel="self"/>
   <link href="http://LucienLee.github.com/"/>
   <updated>2013-05-10T00:20:55+08:00</updated>
   <id>http://LucienLee.github.com/</id>
