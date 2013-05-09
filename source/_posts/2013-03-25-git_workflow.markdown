@@ -3,7 +3,7 @@ layout: post
 title: "[RD水電工不會修水管] Git 簡單使用情境教學"
 date: 2013-03-25 15:57
 comments: true
-categories: Open
+categories: 開發工具
 ---
 ##前言
 
@@ -23,7 +23,6 @@ Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好�
 對於5945呼叫師傅來說，當然也十分倚賴Git來管理團隊開發。剛加入不久5945，[TonyQ]大大就分享許多讓我受益良多的經驗，我在這裡分享一點小小心得。
 
 <!--more-->
----
 
 ##安裝Git
 
@@ -38,7 +37,6 @@ Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好�
 [Windows setup git]: http://help.github.com/win-set-up-git/
 [Linux setup git]: http://help.github.com/linux-set-up-git/
 
----
 
 ##設定
 Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可以預先設定你的姓名和Email：
@@ -49,7 +47,7 @@ Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可�
 我們可以設定 Git讓他在終端機輸出時加上顏色，讓我們更方便閱讀：
 
 	git config --global color.ui true
----
+
 
 ##讓我們開始使用Git吧！
 
@@ -104,7 +102,7 @@ Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可�
 
 	git commit -v
 
-----
+
 
 ##在分支上開發
 
@@ -146,7 +144,7 @@ branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同
 
 	git stash clear
 
-----
+
 ##小結
 
 簡易的Git工作流程大概是這樣子的：
@@ -171,11 +169,8 @@ branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同
 ###參考資料
 
 [GIT IMMERSION](https://gitimmersion-apputu.rhcloud.com/index.html)
-
 [Git 教育訓練課程投影片 by ihover](http://ihower.tw/blog/archives/6696)
-
 [Try Git](http://try.github.com/)
-
 [Git 情境劇](http://blog.gogojimmy.net/2012/02/29/git-scenario/)
 
 [TonyQ]: https://www.facebook.com/tonylovejava
