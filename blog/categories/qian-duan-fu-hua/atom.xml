@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 前端浮華 | Self Efficacy]]></title>
-  <link href="http://selfecy.com/blog/categories/%E5%89%8D%E7%AB%AF%E6%B5%AE%E8%8F%AF/atom.xml" rel="self"/>
+  <link href="http://selfecy.com/blog/categories/qian-duan-fu-hua/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-05-10T14:26:10+08:00</updated>
+  <updated>2013-05-10T15:51:04+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -22,7 +22,7 @@
 
 <h2>前言</h2>
 
-<p><em><a href="/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+<p><em><a href="http://localhost:4000/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
 
 <p><a href="http://5945.tw">5945呼叫師傅</a>除了過去被動等大家來找我們來解決大眾居家生活的水電問題外，現在也想主動幫助大家擁有美好的生活空間，提出居家加值服務－－牆面彩繪，讓大家可以家裡環境好還要更好。</p>
 
