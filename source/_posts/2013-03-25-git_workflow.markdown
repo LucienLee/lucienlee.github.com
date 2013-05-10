@@ -4,12 +4,13 @@ title: "[RD水電工不會修水管] Git 簡單使用情境教學"
 date: 2013-03-25 15:57
 comments: true
 categories: [開發工具,RD水電工不會修水管]
+
 ---
 <a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a>
 
 ##前言
 
-_[RD水電工不會修水管](http://localhost:4000/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/)專欄是我在5945呼叫師傅作為RD實習生的學習分享。_
+_[RD水電工不會修水管](/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/)專欄是我在5945呼叫師傅作為RD實習生的學習分享。_
 
 Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後，幫你時光倒流回到之前的樣子。
 總結來說Git有以下幾點特色：

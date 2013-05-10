@@ -18,7 +18,7 @@
 # - category_dir:          The subfolder to build category pages in (default is 'categories').
 # - category_title_prefix: The string used before the category name in the page title (default is
 #                          'Category: ').
-
+require "stringex"
 module Jekyll
 
   # The CategoryIndex class creates a single category page for the specified category.
@@ -106,19 +106,14 @@ module Jekyll
       if self.layouts.key? 'category_index'
         dir = self.config['category_dir'] || 'categories'
         self.categories.keys.each do |category|
-          cate_dir =  category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
-          cate_dir = URI::escape(cate_dir)
-          cate_dir = URI::parse(cate_dir)
-          cate_dir = cate_dir.to_s
-          self.write_category_index(File.join(dir, cate_dir), category)
+          self.write_category_index(File.join(dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase), category)
         end
 
-        # Throw an exception if the layout couldn't be found.
+      # Throw an exception if the layout couldn't be found.
       else
         throw "No 'category_index' layout found."
       end
     end
-
 
   end
 
@@ -166,7 +161,7 @@ module Jekyll
     #
     def category_link(category)
       dir = @context.registers[:site].config['category_dir']
-      "<a class='category' href='/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{category}</a>"
+      "<a class='category' href='/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase}/'>#{category}</a>"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
