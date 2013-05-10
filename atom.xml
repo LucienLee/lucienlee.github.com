@@ -4,7 +4,7 @@
   <title><![CDATA[Self Efficacy]]></title>
   <link href="http://selfecy.com/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-05-10T02:48:34+08:00</updated>
+  <updated>2013-05-10T14:26:10+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -22,7 +22,7 @@
 
 <h2>前言</h2>
 
-<p><em><a href="http://localhost:4000/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+<p><em><a href="http://selfecy.com/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
 
 <p><a href="http://5945.tw">5945呼叫師傅</a>除了過去被動等大家來找我們來解決大眾居家生活的水電問題外，現在也想主動幫助大家擁有美好的生活空間，提出居家加值服務－－牆面彩繪，讓大家可以家裡環境好還要更好。</p>
 
@@ -124,7 +124,7 @@
 
 <h2>前言</h2>
 
-<p><em><a href="http://localhost:4000/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+<p><em><a href="http://selfecy.com/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
 
 <p>Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後，幫你時光倒流回到之前的樣子。
 總結來說Git有以下幾點特色：</p>
