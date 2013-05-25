@@ -65,6 +65,9 @@ h6, section h5, section section h4, section section section h3 {
 
 p, article blockquote, ul, ol { margin-bottom: 1.5em; }
 
+//custom ul, li
+ul, li{ margin-left: 25px;}
+
 ul { list-style-type: disc;
   ul { list-style-type: circle; margin-bottom: 0px;
     ul { list-style-type: square; margin-bottom: 0px; }}}
