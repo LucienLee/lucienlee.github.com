@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 開發工具 | Self Efficacy]]></title>
   <link href="http://selfecy.com/blog/categories/kai-fa-gong-ju/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-05-15T21:29:52+08:00</updated>
+  <updated>2013-05-25T19:29:21+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -18,9 +18,9 @@
     <link href="http://selfecy.com/blog/2013/03/25/git_workflow/"/>
     <updated>2013-03-25T15:57:00+08:00</updated>
     <id>http://selfecy.com/blog/2013/03/25/git_workflow</id>
-    <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a></p>
+    <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo" /></a></p>
 
-<h2>前言</h2>
+<h2 id="section">前言</h2>
 
 <p><em><a href="/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
 
@@ -28,34 +28,30 @@
 總結來說Git有以下幾點特色：</p>
 
 <ul>
-<li>可以隨時復原到過去的版本</li>
-<li>多人協作時不會覆蓋到別人的檔案</li>
-<li>可以保留修改記錄，知道每個人的程式更動</li>
-<li>軟體發行時，分出開發版與維護版</li>
+  <li>可以隨時復原到過去的版本</li>
+  <li>多人協作時不會覆蓋到別人的檔案</li>
+  <li>可以保留修改記錄，知道每個人的程式更動</li>
+  <li>軟體發行時，分出開發版與維護版</li>
 </ul>
-
 
 <p>我認為掌握Git是培養團隊開發技巧的第一步。
 Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好的團隊工作流（workflow）概念。所謂<strong>「練武不練功，老來一場空」</strong>，掌握Git指令只是學習的第一步，更重要的是使用Git的開發心法。</p>
 
-<p>對於5945呼叫師傅來說，當然也十分倚賴Git來管理團隊開發。剛加入不久5945，<a href="https://www.facebook.com/tonylovejava">TonyQ</a>大大就分享許多讓我受益良多的經驗，我在這裡分享一點小小心得。</p>
+<p>對於5945呼叫師傅來說，當然也十分倚賴Git來管理團隊開發。剛加入不久5945，[TonyQ]大大就分享許多讓我受益良多的經驗，我在這裡分享一點小小心得。</p>
 
 <!--more-->
 
-
-<h2>安裝Git</h2>
+<h2 id="git">安裝Git</h2>
 
 <p>請參考 Github 官網</p>
 
 <ul>
-<li><a href="http://help.github.com/mac-set-up-git/">Mac setup git</a></li>
-<li><a href="http://help.github.com/win-set-up-git/">Windows setup git</a></li>
-<li><a href="http://help.github.com/linux-set-up-git/">Linux setup git</a></li>
+  <li><a href="http://help.github.com/mac-set-up-git/">Mac setup git</a></li>
+  <li><a href="http://help.github.com/win-set-up-git/">Windows setup git</a></li>
+  <li><a href="http://help.github.com/linux-set-up-git/">Linux setup git</a></li>
 </ul>
 
-
-<h2>設定</h2>
-
+<h2 id="section-1">設定</h2>
 <p>Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可以預先設定你的姓名和Email：</p>
 
 <pre><code>git config --global user.name "Your Name"
@@ -67,7 +63,7 @@ git config --global user.email "your_email@whatever.com"
 <pre><code>git config --global color.ui true
 </code></pre>
 
-<h2>讓我們開始使用Git吧！</h2>
+<h2 id="git-1">讓我們開始使用Git吧！</h2>
 
 <p>首先我們建立一個新的Repository。</p>
 
@@ -81,7 +77,7 @@ git config --global user.email "your_email@whatever.com"
 <pre><code>git clone git@github.com:LucienLee/5945_RD_training.git
 </code></pre>
 
-<h2>第一次提交就上手</h2>
+<h2 id="section-2">第一次提交就上手</h2>
 
 <p><code>git status</code>可以幫助我們檢查git狀態。
 在每次提交之前，很重要地是確認自己git的狀態，了解現在檔案Stage的狀況以及目前的branch，可以幫助自己避免做出意外的操作。</p>
@@ -126,7 +122,7 @@ git config --global user.email "your_email@whatever.com"
 <pre><code>git commit -v
 </code></pre>
 
-<h2>在分支上開發</h2>
+<h2 id="section-3">在分支上開發</h2>
 
 <p>branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同人同時開發不同部分最後再合併（merge）起來。舉例來說，當我們要開發新功能或是要修正某個 Bug，甚至有時候想要些一些測試的程式來玩玩看，我們可以利用 branch 保持開發環境乾淨。</p>
 
@@ -172,32 +168,32 @@ git merge x-plan
 <pre><code>git stash clear
 </code></pre>
 
-<h2>小結</h2>
+<h2 id="section-4">小結</h2>
 
 <p>簡易的Git工作流程大概是這樣子的：</p>
 
 <ol>
-<li>有新任務出現！</li>
-<li>開新分支。</li>
-<li>切到新分支進行開發。</li>
-<li>把檔案加入 stage。</li>
-<li>提交到版本庫。</li>
-<li>合併分支。</li>
+  <li>有新任務出現！</li>
+  <li>開新分支。</li>
+  <li>切到新分支進行開發。</li>
+  <li>把檔案加入 stage。</li>
+  <li>提交到版本庫。</li>
+  <li>合併分支。</li>
 </ol>
-
 
 <p><img src="http://farm9.staticflickr.com/8523/8673174076_b2aa77a843_z.jpg" alt="workflow" /></p>
 
 <p>至於要做到什麼進度才提交一次呢？通常是完成一個階段性的小工作，便會做一次 commit ，或是開發中間到了有小功能可以正常執行的新進展。</p>
 
-<h3>參考資料</h3>
+<h3 id="section-5">參考資料</h3>
 
-<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a><br/>
-<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a><br/>
-<a href="http://try.github.com/">Try Git</a><br/>
+<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a><br />
+<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a><br />
+<a href="http://try.github.com/">Try Git</a><br />
 <a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/">Git 情境劇</a></p>
 
-<p><em>(本篇同步刊載於<a href="5945.tw/blog">5945呼叫師傅-部落格</a>)</em></p>
+<p><em>(本篇同步刊載於<a href="5945.tw/blog">5945呼叫師傅-部落格</a>)</em>
+[TonyQ]: https://www.facebook.com/tonylovejava</p>
 ]]></content>
   </entry>
   
