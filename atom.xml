@@ -4,7 +4,7 @@
   <title><![CDATA[Self Efficacy]]></title>
   <link href="http://selfecy.com/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-05-25T19:29:21+08:00</updated>
+  <updated>2013-05-26T13:47:19+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -43,7 +43,7 @@
 
 <p>在這裡所介紹重重影響使用者的角色，是指決定是否給使用者使用產品的實際決策者，他們掌握我們產品的生殺大權。但是他們的目標或許與真實的使用者不一樣，比如說前輩提到色情守門員。（我想情慾蠢動的少年們都會自己為自己的需求找到出路的XDD）   </p>
 
-<p>像這種例子層出不窮，像是<a href="http://www.drpad.com.tw/">Dr.Pad</a>－－幫助醫師整合醫療資訊的APP，實際的使用者醫師們並沒有決策權，實際擁有決策權的院長、董事們卻會有其他不同於醫師需求的考量，所以當我們只去了解醫生卻沒有顧慮到決策人的想法時，可能會造成產品的銷售問題。</p>
+<p>像這種例子層出不窮，像是平板醫療軟體－－幫助醫師整合醫療資訊的APP，實際的使用者醫師們並沒有決策權，實際擁有決策權的院長、董事們卻會有其他不同於醫師需求的考量，所以當我們只去了解醫生卻沒有顧慮到決策人的想法時，可能會造成產品的銷售問題。</p>
 
 <p>當用的人與買的人不一樣的時候，如果我們乖乖地只為目標使用者設計產品，就像玩遊戲時，專注在眼前的魔王上，把自己技能裝備搭配成專門剋眼前魔王的組合，在好不容易攻略魔王時，發現剛剛打倒的竟然只是小魔王，真正的最終大BOSS：設計產品我們時所忽略的角色，等到我們筋疲力盡時再重重地賞了我們一巴掌。</p>
 
@@ -86,7 +86,7 @@
 </tbody>
 </table>
 
-<p>總結以上，對於產品設計我們應該不只專注在使用者，而是要擴大到所有可能參與的角色，我稱之為權益相關者( Stackholder )。</p>
+<p>總結以上，對於產品設計我們應該不只專注在使用者，而是要擴大到所有可能參與的角色，我稱之為權益相關者( Stockholder )。</p>
 
 <h2 id="section-2">現實的困境</h2>
 
@@ -166,7 +166,7 @@
 
 <p><span class="caption-wrapper"><img class="caption" src="https://lh6.googleusercontent.com/-5uskZMaW4-w/UZ9ATiBZ-2I/AAAAAAAAAXU/LgWokeQfAps/w614-h319-no/h%2526s.png" width="" height="" alt="holistic 與 subgoaling 範例圖" title="holistic 與 subgoaling 範例圖" /><span class="caption-text">holistic 與 subgoaling 範例圖</span></span></p>
 
-<p>在案例中他們實驗在課程50%、70%和100%比例使用 subgoaling 的題目，學生的學習成效如何。藉由前側後側來研究學生的學習情況，來決定要採取什麼方案。</p>
+<p>在案例中他們實驗在課程50%、70%和100%比例使用 subgoaling 的題目，學生的學習成效如何。藉由前測後測來研究學生的學習情況，來決定要採取什麼方案。</p>
 
 <h3 id="cross-iteration-studies-">交叉迭代研究（ Cross-Iteration Studies ）</h3>
 
@@ -179,7 +179,7 @@
 
 <h2 id="section-7">結論</h2>
 
-<p>當我們設計產品的時候，往往把所有注意力放在使用者身上，事實上我們應該關注所有與產品有相關的角色，也就是權益相關者( stackholder )身上。以免當我們辛苦開發設計完產品後，卻遭到不被採納的結果。另外相關權益者包含許多不同的角色，每種角色都有著不同的需求目標，而這些需求很有可能是彼此衝突的，在資源有限、慾望無窮的情況下我們不可能同時滿足所有人的需求，我們得在衝突中做出取捨。</p>
+<p>當我們設計產品的時候，往往把所有注意力放在使用者身上，事實上我們應該關注所有與產品有相關的角色，也就是權益相關者( stockholder )身上。以免當我們辛苦開發設計完產品後，卻遭到不被採納的結果。另外相關權益者包含許多不同的角色，每種角色都有著不同的需求目標，而這些需求很有可能是彼此衝突的，在資源有限、慾望無窮的情況下我們不可能同時滿足所有人的需求，我們得在衝突中做出取捨。</p>
 
 <p>這裡我介紹了三個可以依賴的設計原則來幫助我們，在設計衝突中有程序地做出選擇來最大滿足相關權益者們的需求。這三個原則分別是：</p>
 
@@ -193,8 +193,6 @@
 
 <h2 id="section-8">參考資料</h2>
 <p><a href="http://dl.acm.org/citation.cfm?id=2470670">Martina A. Rau, Vincent Aleven, Nikol Rummel, Stacie Rohrbach. Why Interactive Learning Environments Can Have It All: Resolving Design Conflicts Between Competing Goals.   ( <em>CHI’ 13</em> )</a>  </p>
-
-<p>感謝 <a href="https://www.facebook.com/oboegrace">Grace</a> 學姊分享 Dr. Pad 的例子。</p>
 
 <p>Top image via <a href="http://www.flickr.com/photos/safcircocreativo/">Sebastian Arbelaez Fuentes</a>, CC License. <br />
 “Affinity diagram” image via <a href="http://www.flickr.com/photos/logicalrealist/">Sean Munson</a>, CC License.</p>
