@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 開發最惱人就是這個設定 | Self Efficacy]]></title>
   <link href="http://selfecy.com/blog/categories/kai-fa-zui-nao-ren-jiu-shi-zhe-ge-she-ding/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-07-13T01:07:59+08:00</updated>
+  <updated>2013-07-13T01:11:19+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -25,7 +25,7 @@
 
 <p>很不幸地是，似乎蠻多前輩都是使用英文分類，而其他找到的解法雖然可以使用中文分類，但側編列的問題似乎並不適用於 host 在 <strong>github</strong> 的情況，這真是很奇怪的問題，讓我一度萌生把東西改架在 <a href="https://www.heroku.com/‎">Heroku</a> 上。</p>
 
-<p>最後我參考了 <a href="http://khaos.github.io/">khaos</a> 如何去讓 Octopreess 支援中文分類的作法，如法炮製地更改側邊列的 <code>category_list_tag.rb</code> 讓他成功讓我可以在 github 上的 Octopress 使用中文側邊列，有鑑於我沒有在網路上找到我的情況的解法，在此分享給大家。</p>
+<p>最後我參考了 <a href="http://khaos.github.io/">khaos</a> 如何去讓 Octopreess 支援中文分類的作法，如法炮製地更改側邊列的 <code>category_sidebar.rb</code> 讓他成功讓我可以在 github 上的 Octopress 使用中文側邊列，有鑑於我沒有在網路上找到我的情況的解法，在此分享給大家。</p>
 
 <h2 id="section-1">解決方法</h2>
 
