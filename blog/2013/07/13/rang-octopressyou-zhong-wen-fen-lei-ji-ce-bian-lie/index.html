@@ -101,6 +101,8 @@ Octopress 雖然號稱他可以讓人輕鬆部屬、愉悅寫作，但實際上�
 
 <p>最後我參考了 <a href="http://khaos.github.io/">khaos</a> 如何去讓 Octopreess 支援中文分類的作法，如法炮製地更改側邊列的 <code>category_sidebar.rb</code> 讓他成功讓我可以在 github 上的 Octopress 使用中文側邊列，有鑑於我沒有在網路上找到我的情況的解法，在此分享給大家。</p>
 
+<!-- more -->
+
 <h2 id="section-1">解決方法</h2>
 
 <p>基本上我是跟隨 <a href="http://khaos.github.io/blog/2012/12/06/using-chinese-category-tags-in-octopress/">Octopress易筋经，中文分类标签</a> 的思考方法。既然中文行不通，那就把中文換成英文拼音，以英文來存取中文檔名。實作上是利用 <a href="https://github.com/rsl/stringex">stringex</a> 的 <code>to_url</code> 函式把中文分類標籤的連結位置與相應的 <code>category_dir</code> 全部換成相應的拼音。實際上當你使用 <code>rake new_[post|page]</code> 指令創建含有中文名的文章時也採用了這樣的技巧，你可以去觀察 Octopress 所建出來的 markdown 檔名，中文標題全部換為拼音顯示。</p>
