@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://selfecy.com/blog/2013/03/25/git_workflow/</loc>
+        <lastmod>2013-05-10T15:50:34+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://selfecy.com/blog/2013/04/25/how-to-make-the-edm/</loc>
+        <lastmod>2013-05-10T15:32:44+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://selfecy.com/blog/2013/05/22/when-conflicts-happen-in-design/</loc>
+        <lastmod>2013-05-26T13:46:36+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://selfecy.com/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa/</loc>
+        <lastmod>2013-07-10T18:24:22+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://selfecy.com/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/
+        </loc>
+        <lastmod>2013-07-21T17:18:10+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://selfecy.com/blog/archives/</loc>
+        <lastmod>2013-07-21T17:18:10+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://selfecy.com/</loc>
+        <lastmod>2013-07-21T17:18:10+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://selfecy.com/robots.txt</loc>
+        <lastmod>2013-05-10T15:04:11+08:00</lastmod>
+    </url>
+</urlset>

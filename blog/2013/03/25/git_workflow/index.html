@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>[RD水電工不會修水管] Git 簡單使用情境教學 - Self Efficacy</title>
+  <meta name="author" content="Lucien Lee">
+
+  
+  <meta name="description" content="前言 RD水電工不會修水管專欄是我在5945呼叫師傅作為RD實習生的學習分享。 Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://selfecy.com/blog/2013/03/25/git_workflow">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Self Efficacy" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Self Efficacy</a></h1>
+  
+    <h2>Think as User, Sketch as Designer, Do as Hacker.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:selfecy.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">[RD水電工不會修水管] Git 簡單使用情境教學</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-25T15:57:00+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo" /></a></p>
+
+<h2 id="section">前言</h2>
+
+<p><em><a href="/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+
+<p>Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後，幫你時光倒流回到之前的樣子。
+總結來說Git有以下幾點特色：</p>
+
+<ul>
+  <li>可以隨時復原到過去的版本</li>
+  <li>多人協作時不會覆蓋到別人的檔案</li>
+  <li>可以保留修改記錄，知道每個人的程式更動</li>
+  <li>軟體發行時，分出開發版與維護版</li>
+</ul>
+
+<p>我認為掌握Git是培養團隊開發技巧的第一步。
+Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好的團隊工作流（workflow）概念。所謂<strong>「練武不練功，老來一場空」</strong>，掌握Git指令只是學習的第一步，更重要的是使用Git的開發心法。</p>
+
+<p>對於5945呼叫師傅來說，當然也十分倚賴Git來管理團隊開發。剛加入不久5945，[TonyQ]大大就分享許多讓我受益良多的經驗，我在這裡分享一點小小心得。</p>
+
+<!--more-->
+
+<h2 id="git">安裝Git</h2>
+
+<p>請參考 Github 官網</p>
+
+<ul>
+  <li><a href="http://help.github.com/mac-set-up-git/">Mac setup git</a></li>
+  <li><a href="http://help.github.com/win-set-up-git/">Windows setup git</a></li>
+  <li><a href="http://help.github.com/linux-set-up-git/">Linux setup git</a></li>
+</ul>
+
+<h2 id="section-1">設定</h2>
+<p>Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可以預先設定你的姓名和Email：</p>
+
+<pre><code>git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+</code></pre>
+
+<p>我們可以設定 Git讓他在終端機輸出時加上顏色，讓我們更方便閱讀：</p>
+
+<pre><code>git config --global color.ui true
+</code></pre>
+
+<h2 id="git-1">讓我們開始使用Git吧！</h2>
+
+<p>首先我們建立一個新的Repository。</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>或是 Clone 現有的 Repository ，像是新剛加入別人專案時，要先把目前的程式先複製一份到本機上。你可以在Github或是Bitbucket上看到一個專案位置，把它複製起來後輸入<code>git clone 複製位置</code>，此時自己的電腦就會有一份專案檔案了。</p>
+
+<p><img src="http://farm9.staticflickr.com/8522/8671665547_35020ba137_z.jpg" alt="github" /></p>
+
+<pre><code>git clone git@github.com:LucienLee/5945_RD_training.git
+</code></pre>
+
+<h2 id="section-2">第一次提交就上手</h2>
+
+<p><code>git status</code>可以幫助我們檢查git狀態。
+在每次提交之前，很重要地是確認自己git的狀態，了解現在檔案Stage的狀況以及目前的branch，可以幫助自己避免做出意外的操作。</p>
+
+<p>由於<code>git status</code>是一個非常常使用的指令，所以我們可以利用以下指令幫他加入別名，讓我們可以用自定的名字來呼叫他：</p>
+
+<pre><code>git config --global alias.st status
+</code></pre>
+
+<p>如此一來，就可以用<code>git st</code>代替<code>git status</code>了。</p>
+
+<p><img src="http://farm9.staticflickr.com/8531/8671712357_27e67402d1_z.jpg" alt="git status" /></p>
+
+<p>上面表示我們正在一個名為master的branch上，然後有一些檔案更動了還沒有加入暫存區（stage）裡。</p>
+
+<p>我們可以利用<code>git add</code>把檔案加到暫存區中。</p>
+
+<pre><code>git add phase1/test/index.php
+</code></pre>
+
+<p>雖然我們可以直接使用<code>git add .</code>一口氣把資料夾底下所有檔案加到暫存區裡頭，但非常不建議不檢視狀態直接加，因為這樣很有可能會加入你不確定或不想追蹤的檔案們，比如說我使用<code>git add .</code>會把資料夾的Metadata－－phase1/.DS_Store加入暫存區，然而我們並不需要他。</p>
+
+<p><img src="http://farm9.staticflickr.com/8384/8671794541_128ba186c7_z.jpg" alt="git add" /></p>
+
+<p><code>git add</code>完以後我們可以發現git狀態改變了，我們可以把暫存區的東西<strong>『存檔』</strong>，也就是提交，提交會建立一個節點，讓我們以後可以在需要的時候回到這個節點的狀態。我們可以利用<code>git commit</code>來提交檔案。
+<code>git commit</code>後會要求你寫下commit message，讓你標示這個提交的內容是什麼，幫助你以後要回來過去的記錄點時，可以知道要選擇哪個節點。</p>
+
+<p>那你也可以加上以下參數幫助 commit:</p>
+
+<p>加上<code>-m</code>後在加上訊息，可以讓你直接快速提交。</p>
+
+<pre><code>git commit -m "commite message"
+</code></pre>
+
+<p>加上<code>-am</code>則是可以把所有 tracked 但還未 staged 的檔案直接加入並提交，但是十分不建議使用，我們應該要清楚地知道自己提交了什麼。</p>
+
+<pre><code>git commit -am "commite message"
+</code></pre>
+
+<p>加上 <code>-v</code> 會列出更動的紀錄，我們可以直接比較檔案的變動。我在5945實習中被要求使用 <code>-v</code> 來進行commit，理由是在 commit 之前<strong>『要確認自己究竟寫了什麼東西』</strong>，藉由重新審視來確保自己寫的程式是正確的。</p>
+
+<pre><code>git commit -v
+</code></pre>
+
+<h2 id="section-3">在分支上開發</h2>
+
+<p>branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同人同時開發不同部分最後再合併（merge）起來。舉例來說，當我們要開發新功能或是要修正某個 Bug，甚至有時候想要些一些測試的程式來玩玩看，我們可以利用 branch 保持開發環境乾淨。</p>
+
+<p>我可以利用 <code>git branch</code> 來開一個新的分支：</p>
+
+<pre><code>git branch "branch name"
+</code></pre>
+
+<p>然後利用 <code>git branch</code> 來看我們現在有哪些分支：</p>
+
+<p><img src="http://farm9.staticflickr.com/8393/8671903821_5e3e453547_z.jpg" alt="git branch" /></p>
+
+<p>像現在我們有 master 和 x-plan 兩支，而且目前位在master上。
+我們可以使用 <code>git checkout</code> 來切換所在的branch：</p>
+
+<pre><code>git checkout "x-plan"
+</code></pre>
+
+<p>這樣我們就會切到 x-plan 上了。
+我們可以在 x-plan 上獨立開發我們想要的東西，然後一樣在這支上面提交以後，最終我們想把 x-plan 的東西跟別人的東西合併，此時我們可以運用 <code>git merge</code> 來幫助我們合併兩條分支。
+首先先切回 master 上，然後把 x-plan 合併進來：</p>
+
+<pre><code>git checkout master
+git merge x-plan
+</code></pre>
+
+<p>這樣就可以在不干擾團隊其他人的情況下開發了。</p>
+
+<p>另外介紹 <code>git stash</code> ，他可以把目前工作區的東西丟到暫存區裡，等之後在回來拿他。他有許多適用的時機，比如說你不想提交當前完成了一半的程式，但是卻不得不修改一個緊急 Bug ，你可以先把目前工作狀況丟到 stash ，這時候你的工作區和上次剛提交內容的狀況是一樣，所以你可以放心的修 Bug，等到修完 Bug 把程式 push 到 Server 後再把 stash 中剛剛做到一半的東西叫回來繼續。使用方法如下：</p>
+
+<p>將目前所做的修改都暫存起來：</p>
+
+<pre><code>git stash
+</code></pre>
+
+<p>取出最新一次的暫存：</p>
+
+<pre><code>git stash apply
+</code></pre>
+
+<p>清除所有暫存：</p>
+
+<pre><code>git stash clear
+</code></pre>
+
+<h2 id="section-4">小結</h2>
+
+<p>簡易的Git工作流程大概是這樣子的：</p>
+
+<ol>
+  <li>有新任務出現！</li>
+  <li>開新分支。</li>
+  <li>切到新分支進行開發。</li>
+  <li>把檔案加入 stage。</li>
+  <li>提交到版本庫。</li>
+  <li>合併分支。</li>
+</ol>
+
+<p><img src="http://farm9.staticflickr.com/8523/8673174076_b2aa77a843_z.jpg" alt="workflow" /></p>
+
+<p>至於要做到什麼進度才提交一次呢？通常是完成一個階段性的小工作，便會做一次 commit ，或是開發中間到了有小功能可以正常執行的新進展。</p>
+
+<h3 id="section-5">參考資料</h3>
+
+<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a><br />
+<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a><br />
+<a href="http://try.github.com/">Try Git</a><br />
+<a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/">Git 情境劇</a></p>
+
+<p><em>(本篇同步刊載於<a href="5945.tw/blog">5945呼叫師傅-部落格</a>)</em>
+[TonyQ]: https://www.facebook.com/tonylovejava</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Lucien Lee</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-25T15:57:00+08:00" pubdate data-updated="true">Mar 25<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/rdshui-dian-gong-bu-hui-xiu-shui-guan/'>RD水電工不會修水管</a>, <a class='category' href='/blog/categories/kai-fa-gong-ju/'>開發工具</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://selfecy.com/blog/2013/03/25/git_workflow/" data-via="lkiral7903" data-counturl="http://selfecy.com/blog/2013/03/25/git_workflow/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/04/25/how-to-make-the-edm/" title="Next Post: [RD水電工不會修水管] 電子報一次就上手">[RD水電工不會修水管] 電子報一次就上手 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/">讓Octopress有中文分類及側邊列</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa/">AWS EC2 快速連線方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/22/when-conflicts-happen-in-design/">使用者沒你想像的這麼單純</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/25/how-to-make-the-edm/">[RD水電工不會修水管] 電子報一次就上手</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/25/git_workflow/">[RD水電工不會修水管] Git 簡單使用情境教學</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Categories</h1>
+ <ul id="categories">
+ <li class='category'><a href='/blog/categories/rdshui-dian-gong-bu-hui-xiu-shui-guan/'>RD水電工不會修水管 (2)</a></li>
+<li class='category'><a href='/blog/categories/ren-ji-hu-dong/'>人機互動 (1)</a></li>
+<li class='category'><a href='/blog/categories/qian-duan-fu-hua/'>前端浮華 (1)</a></li>
+<li class='category'><a href='/blog/categories/she-ji-yuan-ze/'>設計原則 (1)</a></li>
+<li class='category'><a href='/blog/categories/kai-fa-gong-ju/'>開發工具 (1)</a></li>
+<li class='category'><a href='/blog/categories/kai-fa-zui-nao-ren-jiu-shi-zhe-ge-she-ding/'>開發最惱人就是這個設定 (2)</a></li>
+
+ </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/lkiral7903" data-widget-id="332476982807887874">@lkiral7903的推文</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Lucien Lee -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'selfecy';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://selfecy.com/blog/2013/03/25/git_workflow/';
+        var disqus_url = 'http://selfecy.com/blog/2013/03/25/git_workflow/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
