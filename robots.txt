@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://LucienLee.github.com/sitemap.xml 
