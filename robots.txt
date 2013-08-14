@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://selfecy.com/sitemap.xml 
+Sitemap: http://LucienLee.github.io/sitemap.xml 
