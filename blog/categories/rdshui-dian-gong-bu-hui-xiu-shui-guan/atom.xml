@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: RD水電工不會修水管 | Self Efficacy]]></title>
+  <link href="http://selfecy.com/blog/categories/rdshui-dian-gong-bu-hui-xiu-shui-guan/atom.xml" rel="self"/>
+  <link href="http://selfecy.com/"/>
+  <updated>2013-08-14T23:50:16+08:00</updated>
+  <id>http://selfecy.com/</id>
+  <author>
+    <name><![CDATA[Lucien Lee]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[[RD水電工不會修水管] 電子報一次就上手]]></title>
+    <link href="http://selfecy.com/blog/2013/04/25/how-to-make-the-edm/"/>
+    <updated>2013-04-25T01:39:00+08:00</updated>
+    <id>http://selfecy.com/blog/2013/04/25/how-to-make-the-edm</id>
+    <content type="html"><![CDATA[<p><img src="http://farm9.staticflickr.com/8532/8677674341_d95c6ae4a3_c.jpg" alt="e-paper" /></p>
+
+<h2>前言</h2>
+
+<p><em><a href="http://localhost:4000/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+
+<p><a href="http://5945.tw">5945呼叫師傅</a>除了過去被動等大家來找我們來解決大眾居家生活的水電問題外，現在也想主動幫助大家擁有美好的生活空間，提出居家加值服務－－牆面彩繪，讓大家可以家裡環境好還要更好。</p>
+
+<p>而隨著新服務的推出，最近發行呼叫師傅也跟著發出第一期電子報，讓用戶們可以看到自己家裡可以怎麼改造。</p>
+
+<p>我在這次機會中第一次體驗到如何製作電子報，雖然他本質上就是一個 html 網頁，但是還是有些不同，以下將為各位娓娓道來電子報的小心得。</p>
+
+<!--more-->
+
+
+<h2>電子報與一般網頁的不同</h2>
+
+<p>電子報背後事實上就是 html 網頁，那究竟電子報有什麼特別的呢？
+理由是<a href="http://en.wikipedia.org/wiki/HTML_email"> HTML格式的email </a>的樣式與一般網頁樣式解讀會有所落差，正確地來說 HTML email 只有 HTML 一部分的能力，而且各家電子郵件解讀 HTML email 的時候，有些地方不符合 W3C 的規範，造成電子報顯示的問題。</p>
+
+<p>比如說 <code>&lt;head&gt;</code> 標籤是在一般 HTML 時可以放 CSS 樣式規則，但在 HTML email 裡使用這樣的方法來定義樣式卻會發生問題，有些電子郵件並不支持這樣的用法，比如說Gmail。</p>
+
+<p>另外使用者用來收信的工具十分多元：桌面收信軟體、網頁介面的 Gmail、Hotmail、Yahoo……。每一家對 HTML email 的顯示能力都有些許差異，導致電子報的版型非常難以設計。</p>
+
+<h2>電子報排版設計小技巧</h2>
+
+<p>由於電子報有許多限制，所以也跟著產生一些原則，讓大家比較不容易製作出破版的電子報。</p>
+
+<ol>
+<li>盡量用table來編排。
+ 現在網頁排版主流使用div，配合浮動（float）來排版，或是利用 position 來定位。但由於 table tag 歷史悠久，它是最能被大多數 email client 辨識的 tag ，而且表格定位單純，設計幾欄他就會保留幾欄給你，比較不會出錯。不過簡單的排版還是可以使用 div ，比如說這次呼叫師傅的電子報的版型比較單純，我就使用 div 標籤。</li>
+<li>不要使用 CSS seletor，請使用inline-CSS。
+ 理由我在之前的例子有說過，由於各家對在 <code>&lt;head&gt;</code> 定義樣式支援不同，為了確保你的樣式可以被正常顯示，只好很暴力地慢慢在標籤內下樣式。</li>
+<li>圖片來源使用<strong>絕對路徑</strong>來設置<code>&lt;img src="絕對路徑"&gt;</code>。
+ 很基本的概念，因為你的圖片不會放在各家 email client 裡。</li>
+<li>圖片要設定正確的寬高還有註解，也就是 <code>width</code> 、 <code>height</code> 和 <code>alt</code>。
+ 設置alt可以讓你在圖片無法顯示的時候，讓使用者還可以知道這張圖片的意思。在 email 裡許多電子郵件服務不會自動顯示圖片，而是詢問使用者是否要顯示圖片，設置 alt 可以在還沒出現圖片前，就由圖片敘述去引起使用者的興趣，讓他選擇顯示圖片。</li>
+<li>盡量不要在重要連結上使用圖片。</li>
+<li>不要使用 javascript 或 flash 。</li>
+<li>不要用 IFRAME 嵌入其他網頁。</li>
+<li>確認 HTML 的完整正確，未完成的標籤語法可能會被誤判為 SPAM 郵件。</li>
+<li>[For Designer]電子報版面盡量以簡單、大方、易讀性佳為設計原則。
+ 設計複雜的版面不僅會造成工程師排版的困難，也可能會增加在不同 email client 上顯示畫面不一的情況。</li>
+</ol>
+
+
+<p>最後，在排版時可以去確認目前各家電子郵件服務對 CSS 各種樣式的支援程度，盡量使用各家都支援的屬性。</p>
+
+<ul>
+<li><a href="http://www.campaignmonitor.com/css/">CSS Support in Email Client</a></li>
+</ul>
+
+
+<p><img src="https://lh4.googleusercontent.com/-YBFKvUpAWEo/UXzulQh22SI/AAAAAAAAAWQ/k-jQlkr-LHo/w898-h350/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-04-28+%25E4%25B8%258B%25E5%258D%25885.21.22.jpg" alt="CSS Support" /></p>
+
+<h2>製作流程心得</h2>
+
+<p>我自己實際製作電子報大致流程如下：</p>
+
+<ul>
+<li>設計稿切版</li>
+<li>由外而內佈局撰寫 HTML</li>
+<li>設置定位 CSS 樣式</li>
+<li>設置裝飾 CSS 樣式</li>
+</ul>
+
+
+<p>首先從設計師手上拿到 PSD 設計檔，利用切片工具進行切版。一邊切一邊把版面區塊分出來，並把所需圖片切出來待會使用。</p>
+
+<p><img src="http://farm9.staticflickr.com/8540/8678782452_dd526c3f11_c.jpg" alt="psd" />
+（如果不會使用切版工具可以參考<a href="http://lincyi.pixnet.net/blog/post/26530621-psd%E7%89%88%E5%9E%8B%E5%88%87%E7%89%87%E7%B6%B2%E9%A0%81%E6%95%99%E5%AD%B8~~%E4%BB%A5photoshop%E7%82%BA%E4%BE%8B">這裡</a>。）</p>
+
+<p>根據切版時的想法，建立HTML標籤語法，把版面架構建立起來。然後從最外層開始撰寫定位樣式，盡量使用浮動或是 Normal flow 來排版。</p>
+
+<p><img src="https://lh6.googleusercontent.com/-VgrcsFvL__s/UXz3cNAIv6I/AAAAAAAAAWg/1t2fkm2S_E0/w657-h798/%25E9%259B%25BB%25E5%25AD%2590%25E5%25A0%25B1clear2.jpg" alt="版面區塊" /></p>
+
+<p>等到排版完成，開始補上裝飾樣式，如 <code>font-family</code> 、 <code>font-size</code> 、 <code>color</code> 、 <code>background</code> 、 <code>border</code> ……等等。</p>
+
+<p>切記寫樣式時，一定要使用 inline CSS，例如：</p>
+
+<pre><code>&lt;p style="color:#ff0; font-size:20px; font-family:arial black;"&gt;我是電子報。&lt;/p&gt;
+</code></pre>
+
+<h2>後記</h2>
+
+<p>等我完成電子報以後，才發現有一個非常棒的工具<a href="http://beaker.mailchimp.com/inline-css">CSS Inliner Tool</a>，可以幫我們把 Embed CSS 轉成 Inline CSS ，也就是我之前花許多無謂時間精力去改寫的Inline CSS，現在只要直接用現成的CSS頁面去轉換，不到幾秒鐘，電子報或EDM就自動完成了。</p>
+
+<h3>參考資料</h3>
+
+<p><a href="http://blog.yam.com/hanasan/article/56605300">Yijen&rsquo;s blog－html電子報設計原則整理</a><br/>
+<a href="http://blog.miniasp.com/post/2007/11/Recommandation-on-e-Newsletter-Template-design.aspx">Will 保哥－電子報網頁版型設計建議</a><br/>
+<a href="http://www.reachcustomersonline.com/how-to-code-html-email-newsletters-all-new-version/?doing_wp_cron=1349149818.9325120449066162109375#step5">How To Code HTML Email Newsletters</a></p>
+
+<p><em>(本篇同步刊載於<a href="5945.tw/blog">5945呼叫師傅-部落格</a>)</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[[RD水電工不會修水管] Git 簡單使用情境教學]]></title>
+    <link href="http://selfecy.com/blog/2013/03/25/git_workflow/"/>
+    <updated>2013-03-25T15:57:00+08:00</updated>
+    <id>http://selfecy.com/blog/2013/03/25/git_workflow</id>
+    <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a></p>
+
+<h2>前言</h2>
+
+<p><em><a href="/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+
+<p>Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後，幫你時光倒流回到之前的樣子。
+總結來說Git有以下幾點特色：</p>
+
+<ul>
+<li>可以隨時復原到過去的版本</li>
+<li>多人協作時不會覆蓋到別人的檔案</li>
+<li>可以保留修改記錄，知道每個人的程式更動</li>
+<li>軟體發行時，分出開發版與維護版</li>
+</ul>
+
+
+<p>我認為掌握Git是培養團隊開發技巧的第一步。
+Git本身雖然只是個版本控制系統，但他背後暗藏著一個良好的團隊工作流（workflow）概念。所謂<strong>「練武不練功，老來一場空」</strong>，掌握Git指令只是學習的第一步，更重要的是使用Git的開發心法。</p>
+
+<p>對於5945呼叫師傅來說，當然也十分倚賴Git來管理團隊開發。剛加入不久5945，<a href="https://www.facebook.com/tonylovejava">TonyQ</a> 大大就分享許多讓我受益良多的經驗，我在這裡分享一點小小心得。</p>
+
+<!--more-->
+
+
+<h2>安裝Git</h2>
+
+<p>請參考 Github 官網</p>
+
+<ul>
+<li><a href="http://help.github.com/mac-set-up-git/">Mac setup git</a></li>
+<li><a href="http://help.github.com/win-set-up-git/">Windows setup git</a></li>
+<li><a href="http://help.github.com/linux-set-up-git/">Linux setup git</a></li>
+</ul>
+
+
+<h2>設定</h2>
+
+<p>Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可以預先設定你的姓名和Email：</p>
+
+<pre><code>git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+</code></pre>
+
+<p>我們可以設定 Git讓他在終端機輸出時加上顏色，讓我們更方便閱讀：</p>
+
+<pre><code>git config --global color.ui true
+</code></pre>
+
+<h2>讓我們開始使用Git吧！</h2>
+
+<p>首先我們建立一個新的Repository。</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>或是 Clone 現有的 Repository ，像是新剛加入別人專案時，要先把目前的程式先複製一份到本機上。你可以在Github或是Bitbucket上看到一個專案位置，把它複製起來後輸入<code>git clone 複製位置</code>，此時自己的電腦就會有一份專案檔案了。</p>
+
+<p><img src="http://farm9.staticflickr.com/8522/8671665547_35020ba137_z.jpg" alt="github" /></p>
+
+<pre><code>git clone git@github.com:LucienLee/5945_RD_training.git
+</code></pre>
+
+<h2>第一次提交就上手</h2>
+
+<p><code>git status</code>可以幫助我們檢查git狀態。
+在每次提交之前，很重要地是確認自己git的狀態，了解現在檔案Stage的狀況以及目前的branch，可以幫助自己避免做出意外的操作。</p>
+
+<p>由於<code>git status</code>是一個非常常使用的指令，所以我們可以利用以下指令幫他加入別名，讓我們可以用自定的名字來呼叫他：</p>
+
+<pre><code>git config --global alias.st status
+</code></pre>
+
+<p>如此一來，就可以用<code>git st</code>代替<code>git status</code>了。</p>
+
+<p><img src="http://farm9.staticflickr.com/8531/8671712357_27e67402d1_z.jpg" alt="git status" /></p>
+
+<p>上面表示我們正在一個名為master的branch上，然後有一些檔案更動了還沒有加入暫存區（stage）裡。</p>
+
+<p>我們可以利用<code>git add</code>把檔案加到暫存區中。</p>
+
+<pre><code>git add phase1/test/index.php
+</code></pre>
+
+<p>雖然我們可以直接使用<code>git add .</code>一口氣把資料夾底下所有檔案加到暫存區裡頭，但非常不建議不檢視狀態直接加，因為這樣很有可能會加入你不確定或不想追蹤的檔案們，比如說我使用<code>git add .</code>會把資料夾的Metadata－－phase1/.DS_Store加入暫存區，然而我們並不需要他。</p>
+
+<p><img src="http://farm9.staticflickr.com/8384/8671794541_128ba186c7_z.jpg" alt="git add" /></p>
+
+<p><code>git add</code>完以後我們可以發現git狀態改變了，我們可以把暫存區的東西<strong>『存檔』</strong>，也就是提交，提交會建立一個節點，讓我們以後可以在需要的時候回到這個節點的狀態。我們可以利用<code>git commit</code>來提交檔案。
+<code>git commit</code>後會要求你寫下commit message，讓你標示這個提交的內容是什麼，幫助你以後要回來過去的記錄點時，可以知道要選擇哪個節點。</p>
+
+<p>那你也可以加上以下參數幫助 commit:</p>
+
+<p>加上<code>-m</code>後在加上訊息，可以讓你直接快速提交。</p>
+
+<pre><code>git commit -m "commite message"
+</code></pre>
+
+<p>加上<code>-am</code>則是可以把所有 tracked 但還未 staged 的檔案直接加入並提交，但是十分不建議使用，我們應該要清楚地知道自己提交了什麼。</p>
+
+<pre><code>git commit -am "commite message"
+</code></pre>
+
+<p>加上 <code>-v</code> 會列出更動的紀錄，我們可以直接比較檔案的變動。我在5945實習中被要求使用 <code>-v</code> 來進行commit，理由是在 commit 之前<strong>『要確認自己究竟寫了什麼東西』</strong>，藉由重新審視來確保自己寫的程式是正確的。</p>
+
+<pre><code>git commit -v
+</code></pre>
+
+<h2>在分支上開發</h2>
+
+<p>branch 是指分支的意思，我們可以在 git 上開多個 branch 讓不同人同時開發不同部分最後再合併（merge）起來。舉例來說，當我們要開發新功能或是要修正某個 Bug，甚至有時候想要些一些測試的程式來玩玩看，我們可以利用 branch 保持開發環境乾淨。</p>
+
+<p>我可以利用 <code>git branch</code> 來開一個新的分支：</p>
+
+<pre><code>git branch "branch name"
+</code></pre>
+
+<p>然後利用 <code>git branch</code> 來看我們現在有哪些分支：</p>
+
+<p><img src="http://farm9.staticflickr.com/8393/8671903821_5e3e453547_z.jpg" alt="git branch" /></p>
+
+<p>像現在我們有 master 和 x-plan 兩支，而且目前位在master上。
+我們可以使用 <code>git checkout</code> 來切換所在的branch：</p>
+
+<pre><code>git checkout "x-plan"
+</code></pre>
+
+<p>這樣我們就會切到 x-plan 上了。
+我們可以在 x-plan 上獨立開發我們想要的東西，然後一樣在這支上面提交以後，最終我們想把 x-plan 的東西跟別人的東西合併，此時我們可以運用 <code>git merge</code> 來幫助我們合併兩條分支。
+首先先切回 master 上，然後把 x-plan 合併進來：</p>
+
+<pre><code>git checkout master
+git merge x-plan
+</code></pre>
+
+<p>這樣就可以在不干擾團隊其他人的情況下開發了。</p>
+
+<p>另外介紹 <code>git stash</code> ，他可以把目前工作區的東西丟到暫存區裡，等之後在回來拿他。他有許多適用的時機，比如說你不想提交當前完成了一半的程式，但是卻不得不修改一個緊急 Bug ，你可以先把目前工作狀況丟到 stash ，這時候你的工作區和上次剛提交內容的狀況是一樣，所以你可以放心的修 Bug，等到修完 Bug 把程式 push 到 Server 後再把 stash 中剛剛做到一半的東西叫回來繼續。使用方法如下：</p>
+
+<p>將目前所做的修改都暫存起來：</p>
+
+<pre><code>git stash
+</code></pre>
+
+<p>取出最新一次的暫存：</p>
+
+<pre><code>git stash apply
+</code></pre>
+
+<p>清除所有暫存：</p>
+
+<pre><code>git stash clear
+</code></pre>
+
+<h2>小結</h2>
+
+<p>簡易的Git工作流程大概是這樣子的：</p>
+
+<ol>
+<li>有新任務出現！</li>
+<li>開新分支。</li>
+<li>切到新分支進行開發。</li>
+<li>把檔案加入 stage。</li>
+<li>提交到版本庫。</li>
+<li>合併分支。</li>
+</ol>
+
+
+<p><img src="http://farm9.staticflickr.com/8523/8673174076_b2aa77a843_z.jpg" alt="workflow" /></p>
+
+<p>至於要做到什麼進度才提交一次呢？通常是完成一個階段性的小工作，便會做一次 commit ，或是開發中間到了有小功能可以正常執行的新進展。</p>
+
+<h3>參考資料</h3>
+
+<p><a href="https://gitimmersion-apputu.rhcloud.com/index.html">GIT IMMERSION</a><br/>
+<a href="http://ihower.tw/blog/archives/6696">Git 教育訓練課程投影片 by ihover</a><br/>
+<a href="http://try.github.com/">Try Git</a><br/>
+<a href="http://blog.gogojimmy.net/2012/02/29/git-scenario/">Git 情境劇</a></p>
+
+<p><em>(本篇同步刊載於<a href="5945.tw/blog">5945呼叫師傅-部落格</a>)</em></p>
+]]></content>
+  </entry>
+  
+</feed>

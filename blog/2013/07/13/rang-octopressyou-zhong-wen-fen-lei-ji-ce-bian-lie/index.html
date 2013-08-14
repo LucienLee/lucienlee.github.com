@@ -1,0 +1,308 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>讓Octopress有中文分類及側邊列 - Self Efficacy</title>
+	<meta name="author" content="Lucien Lee">
+
+	
+	<meta name="description" content="讓Octopress有中文分類及側邊列 前言 Octopress 雖然號稱他可以讓人輕鬆部屬、愉悅寫作，但實際上原生 Octopress 2.0 對中文的支持很差，對於與 Ruby 不是好朋友的我，沒有能力自己去改寫，只能去找網路上的 Octopress 前輩們的解法參考，然後 Copy and &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Self Efficacy" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://selfecy.com/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+</div>
+<hgroup>
+  <h1><a href="/">Self Efficacy</a></h1>
+  
+    <h2>Think as User, Sketch as Designer, Do as Hacker.</h2>
+  
+</hgroup>
+
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+
+<section class="aboutme">
+  <p>
+    專注在前端開發、網頁設計以及人機互動，相信我們藉由一小步一小步的成功來改變世界。
+  </p>
+</section>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/lkiral7903" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/LucienLee" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		<a class="linkedin" href="http://www.linkedin.com/in/lucienlee" title="LinkedIn">LinkedIn</a>
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">讓Octopress有中文分類及側邊列</h1>
+	<div class="entry-content" itemprop="articleBody"><h2>前言</h2>
+
+<p>Octopress 雖然號稱他可以讓人<a href="http://blog.xdite.net/posts/2011/10/07/what-is-octopress">輕鬆部屬、愉悅寫作</a>，但實際上原生 Octopress 2.0 對中文的支持很差，對於與 Ruby 不是好朋友的我，沒有能力自己去改寫，只能去找網路上的 Octopress 前輩們的解法參考，然後 Copy and Paste 試試看究竟可不可以解決問題。</p>
+
+<p>首先我遇到了第一個問題是<strong>『如何使用中文分類，以及將分類顯示在側邊列』</strong>。</p>
+
+<p>很不幸地是，似乎蠻多前輩都是使用英文分類，而其他找到的解法雖然可以使用中文分類，但側編列的問題似乎並不適用於 host 在 <strong>github</strong> 的情況，這真是很奇怪的問題，讓我一度萌生把東西改架在 <a href="https://www.heroku.com/%E2%80%8E">Heroku</a> 上。</p>
+
+<p>最後我參考了 <a href="http://khaos.github.io/">khaos</a> 如何去讓 Octopreess 支援中文分類的作法，如法炮製地更改側邊列的 <code>category_sidebar.rb</code> 讓他成功讓我可以在 github 上的 Octopress 使用中文側邊列，有鑑於我沒有在網路上找到我的情況的解法，在此分享給大家。</p>
+
+<!-- more -->
+
+
+<h2>解決方法</h2>
+
+<p>基本上我是跟隨 <a href="http://khaos.github.io/blog/2012/12/06/using-chinese-category-tags-in-octopress/">Octopress易筋经，中文分类标签</a> 的思考方法。既然中文行不通，那就把中文換成英文拼音，以英文來存取中文檔名。實作上是利用 <a href="https://github.com/rsl/stringex">stringex</a> 的 <code>to_url</code> 函式把中文分類標籤的連結位置與相應的 <code>category_dir</code> 全部換成相應的拼音。實際上當你使用 <code>rake new_[post|page]</code> 指令創建含有中文名的文章時也採用了這樣的技巧，你可以去觀察 Octopress 所建出來的 markdown 檔名，中文標題全部換為拼音顯示。</p>
+
+<h3>實際實現方法</h3>
+
+<h4>1. 修改分類的生成方法</h4>
+
+<p>首先你得先讓修改分類的生成方法，使之可以使用中文。我採用 khaos 的 <a href="http://khaos.github.io/blog/2012/12/06/using-chinese-category-tags-in-octopress/">Octopress易筋经，中文分类标签</a> 這篇文章所提方法，在此轉錄他的作法：</p>
+
+<p>請修改你的 <code>plugins/category_generator.rb</code>，首先在文件頭加上一句：</p>
+
+<pre><code>require "stringex"
+</code></pre>
+
+<p>然後找到其中定義 category 目錄的部分，約在 109 行附近：</p>
+
+<pre><code>self.write_category_index(File.join(dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase), category)
+</code></pre>
+
+<p>將其修改為：</p>
+
+<pre><code>self.write_category_index(File.join(dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase), category)
+</code></pre>
+
+<p>再找到定義中文分類網頁標籤的部分，約是 164 行附近：</p>
+
+<pre><code>"&lt;a class='category' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'&gt;#{category}&lt;/a&gt;"
+</code></pre>
+
+<p>將其修改為：</p>
+
+<pre><code>"&lt;a class='category' href='/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase}/'&gt;#{category}&lt;/a&gt;"
+</code></pre>
+
+<p>這樣你就完成中文分類的修改了。</p>
+
+<h4>2. 加入分類到側邊欄</h4>
+
+<p>在修改側篇欄可以使用中文分類前得先有側邊欄分類，以下參考 <a href="https://github.com/DrayChou/OctopressBlog/blob/master/plugins/category_sidebar.rb">DrayChou的做法</a> ：</p>
+
+<p>首先把以下內容存到 <code>plugins/category_sidebar.rb</code> 。</p>
+
+<figure class='code'><figcaption><span>category_sidebar.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">module</span> <span class="nn">Jekyll</span>
+</span><span class='line'>  <span class="k">class</span> <span class="nc">CategoryListTag</span> <span class="o">&lt;</span> <span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Tag</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">html</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>      <span class="n">categories</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">.</span><span class="n">keys</span>
+</span><span class='line'>      <span class="n">categories</span><span class="o">.</span><span class="n">sort</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">category</span><span class="o">|</span>
+</span><span class='line'>        <span class="n">posts_in_category</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">categories</span><span class="o">[</span><span class="n">category</span><span class="o">].</span><span class="n">size</span>
+</span><span class='line'>        <span class="n">html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&lt;li class=&#39;category&#39;&gt;&lt;a href=&#39;/blog/categories/</span><span class="si">#{</span><span class="n">category</span><span class="o">.</span><span class="n">downcase</span><span class="si">}</span><span class="s2">/&#39;&gt;</span><span class="si">#{</span><span class="n">category</span><span class="si">}</span><span class="s2"> (</span><span class="si">#{</span><span class="n">posts_in_category</span><span class="si">}</span><span class="s2">)&lt;/a&gt;&lt;/li&gt;</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>      <span class="n">html</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Template</span><span class="o">.</span><span class="n">register_tag</span><span class="p">(</span><span class="s1">&#39;category_sidebar&#39;</span><span class="p">,</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:CategoryListTag</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接下來把以下內容存到 <code>source/_includes/asides/category_sidebar.html</code> 。</p>
+
+<figure class='code'><figcaption><span>category_sidebar.html </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;section&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;h1&gt;</span>Categories<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;categories&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    {% category_sidebar %}
+</span><span class='line'>  <span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'><span class="nt">&lt;/section&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最後修改 <code>_config.yml</code> ，增加分類內容 <code>asides/category_sidebar.html</code> 到 <code>default_asides</code>。</p>
+
+<figure class='code'><figcaption><span>_config.yml </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="err">   </span><span class="l-Scalar-Plain">default_asides</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">asides/category_sidebar.html</span><span class="p-Indicator">,</span> <span class="nv">asides/recent_posts.html</span><span class="p-Indicator">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>這樣就完成加入側邊欄的分類列表了。</p>
+
+<h4>3. 修改側邊欄支援中文分類</h4>
+
+<p>最後你可以藉由修改 <code>plugins/category_list_tag.rb</code> 來讓他支援中文分類。作法如下：
+首先在文件頭加入：</p>
+
+<pre><code>require "stringex"
+</code></pre>
+
+<p>再來找到 <code>category_list_tag.rb</code> 檔案裡的：</p>
+
+<pre><code>html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/blog/categories/#{category.downcase}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+</code></pre>
+
+<p>將之換成底下這句：</p>
+
+<pre><code>html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/blog/categories/#{category.to_url.downcase}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+</code></pre>
+
+<p>這樣便大功告成，打完收工。</p>
+
+<h2>參考資料</h2>
+
+<p><a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">关于在64位 Windows 7 中部署中文化的Octopress</a> <br/>
+<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo/">Octopress博客分类添加中文支持</a> <br/>
+<a href="http://khaos.github.io/blog/2012/12/06/using-chinese-category-tags-in-octopress/">Octopress易筋经，中文分类标签</a><br/>
+<a href="https://github.com/DrayChou/OctopressBlog/">DrayChou 的 Octopress 框架</a></p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - Lucien Lee -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'selfecy';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://selfecy.com/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/';
+        var disqus_url = 'http://selfecy.com/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
