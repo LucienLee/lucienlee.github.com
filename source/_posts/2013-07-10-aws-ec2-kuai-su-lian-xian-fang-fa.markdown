@@ -42,16 +42,25 @@ categories: [開發最惱人就是這個設定]
 實際上操作的話，以下提供課程所使用的例子：
 
 	# @local machine
-	#首先先複製 key.pem 到 ~/.ssh 底下，並改好檔案權限
-	$ mkdir -p ~/.ssh	$ cp ~/downloads/skey.pem ~/.ssh/	$ chmod 400 ~/.ssh/skey.pem	$ chmod 700 ~/.ssh	$ vim ~/.ssh/config
-	# 在 config 編輯內容如下	Host awshost1		HostName ec2-54-218-35-71.us-west-2.compute.amazonaws.com #@後面那段		User ubuntu #@前面那段		IdentityFile "~/.ssh/skey.pem"
-設置好之後就可以以`ssh 別名`來連線了，比如說以上的例子就是輸入`ssh awshost1`來連線。
-##再也不用 .pem 了
-雖然上面已經可以十分方便了，但是我們還可以再做更多一點。
+	# 首先先複製 key.pem 到 ~/.ssh 底下，並改好檔案權限
+	$ mkdir -p ~/.ssh
+	$ cp ~/downloads/skey.pem ~/.ssh/
+	$ chmod 400 ~/.ssh/skey.pem
+	$ chmod 700 ~/.ssh
+	$ vim ~/.ssh/config
+	# 在 config 編輯內容如下
+	Host awshost1
+		HostName ec2-54-218-35-71.us-west-2.compute.amazonaws.com #@後面那段
+		User ubuntu #@前面那段
+		IdentityFile "~/.ssh/skey.pem"
+設置好之後就可以以`ssh 別名`來連線了，比如說以上的例子就是輸入`ssh awshost1`來連線。
+
+##再也不用 .pem 了
+雖然上面已經可以十分方便了，但是我們還可以再做更多一點。
 上面的方法我們還是需要保留 `.pem` 檔案，事實上我們可以連本地端的 `.pem` 檔都不用就可以連線，以下就是要介紹如何跟你的 `.pem` 說拜拜。
 
 	# @local machine 
-	#首先移動到你的 .pem 所在的地方，印出 .pem 檔的內容。記得要用你自己的檔名換掉yourkeyname
+	# 首先移動到你的 .pem 所在的地方，印出 .pem 檔的內容。記得要用你自己的檔名換掉yourkeyname
 	$ cat yourkeyname.pem  
 	# 印出來的內容複製起來，他會長的像是：
 	$ ssh-rsa AAAAB3NzaC1yc2EAA……
@@ -60,7 +69,8 @@ categories: [開發最惱人就是這個設定]
 	
 	# @remote machine
 	$ vim .ssh/authorized_keys
-	# 貼上你剛剛從自己電腦複製出來的那段東西，存檔。	
+	# 貼上你剛剛從自己電腦複製出來的那段東西，存檔。
+	
 之後你就可以把你的 `.pem` 檔給刪掉啦！然後記得把你 `.ssh/config` 底下的 `IdentityFile "~/.ssh/skey.pem"` 這一行刪掉。
 你最後的 `config` 應該是長這樣子的：
 

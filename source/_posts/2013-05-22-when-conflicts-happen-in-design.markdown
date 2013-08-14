@@ -135,7 +135,7 @@ categories: [設計原則, 人機互動]
 
 論文中他們運用在決定要給學生練習一整個完整複雜的問題( holistic )或是把問題拆解成好幾個步驟，讓學生有結構慢慢地完成問題( subgoaling )。以學習程式舉例來說，一般傳統課堂回家作業要求學生做出完整的翻牌配對遊戲就是提供完整複雜問題，如果是像[codecademy](http://www.codecademy.com/)把作業拆成小部分，先要求你完成建立卡牌功能、洗牌功能再來才是比對功能，讓學生一步步完成作業，則是讓學生有結構慢慢地完成問題。
 
-{%imgcap https://lh6.googleusercontent.com/-5uskZMaW4-w/UZ9ATiBZ-2I/AAAAAAAAAXU/LgWokeQfAps/w614-h319-no/h%2526s.png holistic 與 subgoaling 範例圖%}
+<img src="https://lh6.googleusercontent.com/-5uskZMaW4-w/UZ9ATiBZ-2I/AAAAAAAAAXU/LgWokeQfAps/w614-h319-no/h%2526s.png" alt="holistic 與 subgoaling 範例圖">
 
 在案例中他們實驗在課程50%、70%和100%比例使用 subgoaling 的題目，學生的學習成效如何。藉由前測後測來研究學生的學習情況，來決定要採取什麼方案。
 

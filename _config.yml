@@ -97,7 +97,7 @@ disqus_show_comment_count: ture
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
 
 # linkedIn
 linkedin_user: lucienlee
