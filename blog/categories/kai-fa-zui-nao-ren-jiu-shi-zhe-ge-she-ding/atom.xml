@@ -2,22 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 開發最惱人就是這個設定 | Self Efficacy]]></title>
-  <link href="http://LucienLee.github.io/blog/categories/kai-fa-zui-nao-ren-jiu-shi-zhe-ge-she-ding/atom.xml" rel="self"/>
-  <link href="http://LucienLee.github.io/"/>
-  <updated>2013-08-14T23:54:01+08:00</updated>
-  <id>http://LucienLee.github.io/</id>
+  <link href="http://selfecy.com/blog/categories/kai-fa-zui-nao-ren-jiu-shi-zhe-ge-she-ding/atom.xml" rel="self"/>
+  <link href="http://selfecy.com/"/>
+  <updated>2013-08-14T23:59:10+08:00</updated>
+  <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
-    
+    <email><![CDATA[lkiral7903@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[讓Octopress有中文分類及側邊列]]></title>
-    <link href="http://LucienLee.github.io/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/"/>
+    <link href="http://selfecy.com/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie/"/>
     <updated>2013-07-13T00:18:00+08:00</updated>
-    <id>http://LucienLee.github.io/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie</id>
+    <id>http://selfecy.com/blog/2013/07/13/rang-octopressyou-zhong-wen-fen-lei-ji-ce-bian-lie</id>
     <content type="html"><![CDATA[<h2>前言</h2>
 
 <p>Octopress 雖然號稱他可以讓人<a href="http://blog.xdite.net/posts/2011/10/07/what-is-octopress">輕鬆部屬、愉悅寫作</a>，但實際上原生 Octopress 2.0 對中文的支持很差，對於與 Ruby 不是好朋友的我，沒有能力自己去改寫，只能去找網路上的 Octopress 前輩們的解法參考，然後 Copy and Paste 試試看究竟可不可以解決問題。</p>
@@ -58,12 +58,12 @@
 
 <p>再找到定義中文分類網頁標籤的部分，約是 164 行附近：</p>
 
-<pre><code>"&lt;a class='category' href='http://LucienLee.github.io/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'&gt;#{category}&lt;/a&gt;"
+<pre><code>"&lt;a class='category' href='http://selfecy.com/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'&gt;#{category}&lt;/a&gt;"
 </code></pre>
 
 <p>將其修改為：</p>
 
-<pre><code>"&lt;a class='category' href='http://LucienLee.github.io/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase}/'&gt;#{category}&lt;/a&gt;"
+<pre><code>"&lt;a class='category' href='http://selfecy.com/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase}/'&gt;#{category}&lt;/a&gt;"
 </code></pre>
 
 <p>這樣你就完成中文分類的修改了。</p>
@@ -101,7 +101,7 @@
 </span><span class='line'><span class="sr">  categories = context.registers[:site].categories.keys</span>
 </span><span class='line'><span class="sr">  categories.sort.each do |category|</span>
 </span><span class='line'><span class="sr">    posts_in_category = context.registers[:site].categories[category].size</span>
-</span><span class='line'><span class="sr">    html &amp;lt;&amp;lt; &quot;&amp;lt;li class=&#39;category&#39;&amp;gt;&amp;lt;a href=&#39;http:/</span><span class="o">/</span><span class="no">LucienLee</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">categories</span><span class="o">/</span><span class="c1">#{category.downcase}/&#39;&amp;gt;#{category} (#{posts_in_category})&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n&quot;</span>
+</span><span class='line'><span class="sr">    html &amp;lt;&amp;lt; &quot;&amp;lt;li class=&#39;category&#39;&amp;gt;&amp;lt;a href=&#39;http:/</span><span class="o">/</span><span class="n">selfecy</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">categories</span><span class="o">/</span><span class="c1">#{category.downcase}/&#39;&amp;gt;#{category} (#{posts_in_category})&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;\n&quot;</span>
 </span><span class='line'>  <span class="k">end</span>
 </span><span class='line'>  <span class="n">html</span>
 </span><span class='line'><span class="k">end</span>
@@ -165,12 +165,12 @@
 
 <p>再來找到 <code>category_list_tag.rb</code> 檔案裡的：</p>
 
-<pre><code>html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://LucienLee.github.io/blog/categories/#{category.downcase}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+<pre><code>html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://selfecy.com/blog/categories/#{category.downcase}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
 </code></pre>
 
 <p>將之換成底下這句：</p>
 
-<pre><code>html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://LucienLee.github.io/blog/categories/#{category.to_url.downcase}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+<pre><code>html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://selfecy.com/blog/categories/#{category.to_url.downcase}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
 </code></pre>
 
 <p>這樣便大功告成，打完收工。</p>
@@ -186,9 +186,9 @@
   
   <entry>
     <title type="html"><![CDATA[AWS EC2 快速連線方法]]></title>
-    <link href="http://LucienLee.github.io/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa/"/>
+    <link href="http://selfecy.com/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa/"/>
     <updated>2013-07-10T15:57:00+08:00</updated>
-    <id>http://LucienLee.github.io/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa</id>
+    <id>http://selfecy.com/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa</id>
     <content type="html"><![CDATA[<h2>前言</h2>
 
 <p>最近跟著 <a href="https://www.coursera.org/">Coursera</a> 的 <a href="https://class.coursera.org/startup-001">Startup Engineering</a> 開始學習我較不熟悉的 Linus 環境底下開發與 Deployment ，順手把註冊半年以久的 AWS 帳號進行信用卡認證，正式開通使用。</p>
