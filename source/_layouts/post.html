@@ -3,7 +3,12 @@ layout: default
 single: true
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}</article>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}
+<div class="meta-info">
+	<div>Posted by Lucien, {% include post/date.html %}{{ time }}</div>
+	<div class="tags">{% include post/categories.html %}</div>
+</div>
+</article>
 {% unless page.sharing == false %}
 	{% include post/sharing.html %}
 {% endunless %}
