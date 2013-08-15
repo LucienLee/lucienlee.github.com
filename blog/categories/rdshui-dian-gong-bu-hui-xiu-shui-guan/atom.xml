@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RD水電工不會修水管 | Self Efficacy]]></title>
   <link href="http://selfecy.com/blog/categories/rdshui-dian-gong-bu-hui-xiu-shui-guan/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-08-15T04:04:03+08:00</updated>
+  <updated>2013-08-15T22:54:39+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -87,12 +87,12 @@
 
 <p>首先從設計師手上拿到 PSD 設計檔，利用切片工具進行切版。一邊切一邊把版面區塊分出來，並把所需圖片切出來待會使用。</p>
 
-<p><img src="http://farm9.staticflickr.com/8540/8678782452_dd526c3f11_c.jpg" alt="psd" /><br/>
+<p><img src="http://farm9.staticflickr.com/8540/8678782452_dd526c3f11_c.jpg" alt="" /><br/>
 （如果不會使用切版工具可以參考<a href="http://lincyi.pixnet.net/blog/post/26530621-psd%E7%89%88%E5%9E%8B%E5%88%87%E7%89%87%E7%B6%B2%E9%A0%81%E6%95%99%E5%AD%B8~~%E4%BB%A5photoshop%E7%82%BA%E4%BE%8B">這裡</a>。）</p>
 
 <p>根據切版時的想法，建立HTML標籤語法，把版面架構建立起來。然後從最外層開始撰寫定位樣式，盡量使用浮動或是 Normal flow 來排版。</p>
 
-<p><img src="https://lh6.googleusercontent.com/-VgrcsFvL__s/UXz3cNAIv6I/AAAAAAAAAWg/1t2fkm2S_E0/w657-h798/%25E9%259B%25BB%25E5%25AD%2590%25E5%25A0%25B1clear2.jpg" alt="版面區塊" /></p>
+<p><img src="https://lh6.googleusercontent.com/-VgrcsFvL__s/UXz3cNAIv6I/AAAAAAAAAWg/1t2fkm2S_E0/w657-h798/%25E9%259B%25BB%25E5%25AD%2590%25E5%25A0%25B1clear2.jpg" alt="切割版面區塊" /></p>
 
 <p>等到排版完成，開始補上裝飾樣式，如 <code>font-family</code> 、 <code>font-size</code> 、 <code>color</code> 、 <code>background</code> 、 <code>border</code> ……等等。</p>
 
@@ -120,7 +120,7 @@
     <link href="http://selfecy.com/blog/2013/03/25/git_workflow/"/>
     <updated>2013-03-25T15:57:00+08:00</updated>
     <id>http://selfecy.com/blog/2013/03/25/git_workflow</id>
-    <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a></p>
+    <content type="html"><![CDATA[<p><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" alt="" /></p>
 
 <h2>前言</h2>
 
