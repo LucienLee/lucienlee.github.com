@@ -66,12 +66,12 @@ _[RD水電工不會修水管](/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%
 
 首先從設計師手上拿到 PSD 設計檔，利用切片工具進行切版。一邊切一邊把版面區塊分出來，並把所需圖片切出來待會使用。
 
-![psd](http://farm9.staticflickr.com/8540/8678782452_dd526c3f11_c.jpg)  
+![](http://farm9.staticflickr.com/8540/8678782452_dd526c3f11_c.jpg)  
 （如果不會使用切版工具可以參考[這裡](http://lincyi.pixnet.net/blog/post/26530621-psd%E7%89%88%E5%9E%8B%E5%88%87%E7%89%87%E7%B6%B2%E9%A0%81%E6%95%99%E5%AD%B8~~%E4%BB%A5photoshop%E7%82%BA%E4%BE%8B)。）
 
 根據切版時的想法，建立HTML標籤語法，把版面架構建立起來。然後從最外層開始撰寫定位樣式，盡量使用浮動或是 Normal flow 來排版。
 
-![版面區塊](https://lh6.googleusercontent.com/-VgrcsFvL__s/UXz3cNAIv6I/AAAAAAAAAWg/1t2fkm2S_E0/w657-h798/%25E9%259B%25BB%25E5%25AD%2590%25E5%25A0%25B1clear2.jpg)
+![切割版面區塊](https://lh6.googleusercontent.com/-VgrcsFvL__s/UXz3cNAIv6I/AAAAAAAAAWg/1t2fkm2S_E0/w657-h798/%25E9%259B%25BB%25E5%25AD%2590%25E5%25A0%25B1clear2.jpg)
 
 等到排版完成，開始補上裝飾樣式，如 `font-family` 、 `font-size` 、 `color` 、 `background` 、 `border` ……等等。
 

@@ -6,7 +6,7 @@ comments: true
 categories: [開發工具,RD水電工不會修水管]
 
 ---
-<a href="http://www.flickr.com/photos/43616380@N07/8673251944/" title="Flickr 上 lkiral 的 git-logo"><img src="http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg" width="640" height="267" alt="git-logo"></a>
+![](http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg)
 
 ##前言
 
@@ -50,8 +50,8 @@ Git commit除了記錄程式的變動外，也會記錄作者的資訊，你可�
 我們可以設定 Git讓他在終端機輸出時加上顏色，讓我們更方便閱讀：
 
 	git config --global color.ui true
-
-
+  
+     
 ##讓我們開始使用Git吧！
 
 首先我們建立一個新的Repository。

@@ -108,8 +108,9 @@ body {
 							}
 						}
 						h2 {
-							font-size: 1.3em;
-							color: #574C4C;
+							font-size: 1.5em;
+							// color: #574C4C;
+							color: complement(darken($greyshade,14%));
 							border-bottom: none;
 						}
 						h2::before {
@@ -122,7 +123,7 @@ body {
 						table {
 							line-height: 1.2em;
 							td {
-								text-align: left;
+								// text-align: left;
 							}
 						}
 					}

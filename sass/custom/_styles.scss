@@ -3,4 +3,27 @@
 
 article .entry-content{
 	line-height: 1.8;
+
+	pre{
+		border-radius:3px;
+	}
+	h2{
+		margin-top: 1.2em;
+	}
+	h2,h3,h4,h5{
+		color: complement(darken($greyshade,14%));
+	}
+	h4,h5{
+		line-height: 1.2;
+	}
+	table{
+		th, td{
+			padding: 8px 14px;
+			text-align: center;
+		}
+		
+		td.al{
+			text-align: left;
+		}
+	}
 }

@@ -5,7 +5,7 @@ date: 2013-05-22 20:58
 comments: true
 categories: [設計原則, 人機互動]
 ---
-<a href="http://www.flickr.com/photos/safcircocreativo/4066567809/"><img src="http://farm3.staticflickr.com/2455/4066567809_bc55e7daaa_z.jpg" width="640" height="498" alt="Memo editado."></a>
+<a href="http://www.flickr.com/photos/safcircocreativo/4066567809/"><img src="http://farm3.staticflickr.com/2455/4066567809_bc55e7daaa_z.jpg" width="640" height="498"></a>
 
 現今在產品開發中使用者中心設計（User-Centered Design）越來越被重視。大家在產品設計時遇到不確定的選擇，總會說上一句「那讓使用者來決定吧！」，然後展開了如火如荼的使用者調查，然而使用者調查並不是萬靈丹，只單單依賴使用者中心設計反而會造成一些問題。原因是你所想的使用者並沒有麼單純。很多時候你的產品的使用者他們是好幾種不同類型的族群所混和出來的**一大群使用者**，更甚至還有其他相關參與者。
 <!--more-->
@@ -37,36 +37,36 @@ categories: [設計原則, 人機互動]
 畫成表格以後你會發現打BOSS策略錯誤跟產品開發失敗有多麼像：
 
 <table>
-<caption>勇者冒險與產開發之比較</caption>
+<caption>勇者冒險與產品開發之比較</caption>
 <thead>
 	<tr>
-		<th style="text-align: center">攻略魔王</th>
-		<th style="text-align: center">產品開發</th>
+		<th>攻略魔王</th>
+		<th>產品開發</th>
 	</tr>
 </thead>
 <tbody>
 	<tr>
-		<td style="text-align: center">研究魔王弱點</td>
-		<td style="text-align: center">使用者調查</td>
+		<td>研究魔王弱點</td>
+		<td>使用者調查</td>
 	</tr>
 	<tr>
-		<td style="text-align: center">搭配技能裝備</td>
-		<td style="text-align: center">產品開發</td>
+		<td>搭配技能裝備</td>
+		<td>產品開發</td>
 	</tr>
 	<tr>
-			<td style="text-align: center">打倒小魔王</td>
-			<td style="text-align: center">產品測試完成</td>
+			<td>打倒小魔王</td>
+			<td>產品測試完成</td>
 		</tr>
 		<tr>
-			<td style="text-align: center">大魔王出現</td>
-			<td style="text-align: center">決策者出現</td>
+			<td>大魔王出現</td>
+			<td>決策者出現</td>
 		</tr>
 		<tr>
-			<td style="text-align: center">重重打擊冒險者</td>
-			<td style="text-align: center">打槍已經完成的產品</td>
+			<td>重重打擊冒險者</td>
+			<td>打槍已經完成的產品</td>
 		</tr>
 		<tr>
-			<td colspan="2" style="text-align: center">GG</td>
+			<td colspan="2">GG</td>
 		</tr>
 </tbody>
 </table>   
@@ -114,9 +114,25 @@ categories: [設計原則, 人機互動]
 有了主要目標以後，我們可以利用他來判別其他目標有沒有滿足主要目標來評分，
 比如說論文中的例子：
 
-|     目標    |    效果    |    得分     |
-| :---------: | --------- | :-----------: |
-| 目標四：讓學生獲得信心不斷挑戰問題 |簡單的題目可以增加娛樂性（＋目標5）<br>簡單但有一定程度的問題可以增加學習效果（＋目標1）<br>太簡單的問題對學生深入學習內容沒有幫助（－目標1）<br>學生在遇到比較困難的情況下會對課堂管理有正向的影響（+目標3）| 0.5(目標5的得分) + 1-1+0.5(目標3的得分) |
+<table>
+	<thead>
+		<tr>
+			<th>目標</th>
+			<th>效果</th>
+			<th>得分</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="al">目標四：讓學生獲得信心不斷挑戰問題</td>
+			<td class="al">簡單的題目可以增加娛樂性（＋目標5）<br>
+				簡單但有一定程度的問題可以增加學習效果（＋目標1）<br>
+				太簡單的問題對學生深入學習內容沒有幫助（－目標1）<br>
+				學生在遇到比較困難的情況下會對課堂管理有正向的影響（+目標3）</td>
+			<td class="al">0.5(目標5的得分) + 1-1+0.5(目標3的得分)</td>
+		</tr>
+	</tbody>
+</table>
 
 （目標請參考此章節一開始的例子）
 
