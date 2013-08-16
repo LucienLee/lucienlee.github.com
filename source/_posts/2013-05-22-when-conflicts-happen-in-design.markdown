@@ -39,35 +39,35 @@ categories: [設計原則, 人機互動]
 <table>
 <caption>勇者冒險與產品開發之比較</caption>
 <thead>
-	<tr>
+	<tr class="ac">
 		<th>攻略魔王</th>
 		<th>產品開發</th>
 	</tr>
 </thead>
 <tbody>
-	<tr>
+	<tr class="ac">
 		<td>研究魔王弱點</td>
 		<td>使用者調查</td>
 	</tr>
-	<tr>
+	<tr  class="ac">
 		<td>搭配技能裝備</td>
 		<td>產品開發</td>
 	</tr>
-	<tr>
-			<td>打倒小魔王</td>
-			<td>產品測試完成</td>
-		</tr>
-		<tr>
-			<td>大魔王出現</td>
-			<td>決策者出現</td>
-		</tr>
-		<tr>
-			<td>重重打擊冒險者</td>
-			<td>打槍已經完成的產品</td>
-		</tr>
-		<tr>
-			<td colspan="2">GG</td>
-		</tr>
+	<tr class="ac">
+		<td>打倒小魔王</td>
+		<td>產品測試完成</td>
+	</tr>
+	<tr class="ac">
+		<td>大魔王出現</td>
+		<td>決策者出現</td>
+	</tr>
+	<tr class="ac">
+		<td>重重打擊冒險者</td>
+		<td>打槍已經完成的產品</td>
+	</tr>
+	<tr class="ac">
+		<td colspan="2">GG</td>
+	</tr>
 </tbody>
 </table>   
    
@@ -116,7 +116,7 @@ categories: [設計原則, 人機互動]
 
 <table>
 	<thead>
-		<tr>
+		<tr class="ac">
 			<th>目標</th>
 			<th>效果</th>
 			<th>得分</th>
@@ -124,12 +124,12 @@ categories: [設計原則, 人機互動]
 	</thead>
 	<tbody>
 		<tr>
-			<td class="al">目標四：讓學生獲得信心不斷挑戰問題</td>
-			<td class="al">簡單的題目可以增加娛樂性（＋目標5）<br>
+			<td>目標四：讓學生獲得信心不斷挑戰問題</td>
+			<td>簡單的題目可以增加娛樂性（＋目標5）<br>
 				簡單但有一定程度的問題可以增加學習效果（＋目標1）<br>
 				太簡單的問題對學生深入學習內容沒有幫助（－目標1）<br>
 				學生在遇到比較困難的情況下會對課堂管理有正向的影響（+目標3）</td>
-			<td class="al">0.5(目標5的得分) + 1-1+0.5(目標3的得分)</td>
+			<td>0.5(目標5的得分) + 1-1+0.5(目標3的得分)</td>
 		</tr>
 	</tbody>
 </table>

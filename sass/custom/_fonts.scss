@@ -8,3 +8,18 @@
 //$heading-font-family: "Verdana", sans-serif;
 //$header-title-font-family: "Futura", sans-serif;
 //$header-subtitle-font-family: "Futura", sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
+
+$josf: 'Josefin Sans', sans-serif;
+
+.container .left-col #header{
+	h1{
+		font-size: 2.2em;
+		font-family:$josf;
+	}
+	h2{
+		margin-top: 10px;
+		font-size:1em;
+		line-height: 1.4;
+	}
+}

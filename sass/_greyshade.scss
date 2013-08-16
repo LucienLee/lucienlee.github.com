@@ -25,6 +25,8 @@ body {
 	#sub-nav {
 		float: none;
 		position: relative;
+		// position: absolute;
+		// bottom:0;
 		.social {
 			float: none;
 		}
@@ -124,6 +126,11 @@ body {
 							line-height: 1.2em;
 							td {
 								text-align: left;
+							}
+							tr.ac{
+								td,th{
+									text-align: center;
+								}
 							}
 						}
 					}
