@@ -4,6 +4,7 @@ title: "讓Octopress有中文分類及側邊列"
 date: 2013-07-13 00:18
 comments: true
 categories: [開發最惱人就是這個設定]
+tags: [octopress]
 ---
 
 ##前言

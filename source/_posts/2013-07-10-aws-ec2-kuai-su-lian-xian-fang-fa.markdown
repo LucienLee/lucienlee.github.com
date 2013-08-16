@@ -4,6 +4,7 @@ title: "AWS EC2 快速連線方法"
 date: 2013-07-10 15:57
 comments: true
 categories: [開發最惱人就是這個設定]
+tags:[AWS, ssh]
 ---
 ##前言
 

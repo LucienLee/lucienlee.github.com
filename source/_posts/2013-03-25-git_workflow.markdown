@@ -4,7 +4,7 @@ title: "[RD水電工不會修水管] Git 簡單使用情境教學"
 date: 2013-03-25 15:57
 comments: true
 categories: [開發工具,RD水電工不會修水管]
-
+tags: [git]
 ---
 ![](http://farm9.staticflickr.com/8524/8673251944_0e3ca1f1f3_z.jpg)
 

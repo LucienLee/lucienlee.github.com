@@ -7,6 +7,7 @@ single: true
 <div class="meta-info">
 	<div>Posted by Lucien, {% include post/date.html %}{{ time }}</div>
 	<div class="tags">{% include post/categories.html %}</div>
+	{% include post/tags.html %}
 </div>
 </article>
 {% unless page.sharing == false %}
