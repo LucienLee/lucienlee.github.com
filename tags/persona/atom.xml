@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 設計原則 | Self Efficacy]]></title>
-  <link href="http://selfecy.com/blog/categories/she-ji-yuan-ze/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: persona | Self Efficacy]]></title>
+  <link href="http://selfecy.com/tags/persona/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
   <updated>2013-08-16T17:20:36+08:00</updated>
   <id>http://selfecy.com/</id>
