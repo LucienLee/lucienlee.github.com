@@ -3,8 +3,8 @@ layout: post
 title: "[RD水電工不會修水管] 電子報一次就上手"
 date: 2013-04-25 01:39
 comments: true
-categories: [前端浮華,RD水電工不會修水管]
-tags:[電子報, EDM]
+categories: [前端浮華, RD水電工不會修水管]
+tags: [電子報,EDM]
 ---
 
 ![e-paper](http://farm9.staticflickr.com/8532/8677674341_d95c6ae4a3_c.jpg)
