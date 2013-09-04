@@ -4,12 +4,16 @@ single: true
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}
+<div class="copyright">
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img style="vertical-align: middle; margin-right: 15px;" alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>本著作可<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW">保持署名-非商業性-相同方式分享-自由轉載</a>
+</div>
 <div class="meta-info">
 	<div>Posted by Lucien, {% include post/date.html %}{{ time }}</div>
 	<div class="tags">{% include post/categories.html %}</div>
 	{% include post/tags.html %}
 </div>
 </article>
+
 {% unless page.sharing == false %}
 	{% include post/sharing.html %}
 {% endunless %}

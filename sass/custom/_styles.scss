@@ -24,7 +24,7 @@ article .entry-content{
 }
 
 .meta-info{
-	margin-top: 30px;
+	margin-top: 20px;
 	div{
 		display: inline-block;	
 	}
@@ -123,4 +123,11 @@ article .entry-content{
 .container .left-col #header #sub-nav {
 	// position: absolute;
 	// bottom:0;
+}
+
+.copyright{
+	width: auto;
+	margin: 50px auto 0px;
+	background: #ededed;
+	padding: 10px;
 }
