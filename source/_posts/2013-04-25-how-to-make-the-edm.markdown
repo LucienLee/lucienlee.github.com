@@ -3,15 +3,15 @@ layout: post
 title: "[RD水電工不會修水管] 電子報一次就上手"
 date: 2013-04-25 01:39
 comments: true
-categories: [前端浮華, RD水電工不會修水管]
-tags: [電子報,EDM]
+categories: [前端浮華]
+tags: [電子報,EDM, RD水電工不會修水管]
 ---
 
 ![e-paper](http://farm9.staticflickr.com/8532/8677674341_d95c6ae4a3_c.jpg)
 
 ##前言
 
-_[RD水電工不會修水管](/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/)專欄是我在5945呼叫師傅作為RD實習生的學習分享。_
+_[RD水電工不會修水管]( {{ root_url }}/tags/rdshui-dian-gong-bu-hui-xiu-shui-guan/)專欄是我在5945呼叫師傅作為RD實習生的學習分享。_
 
 [5945呼叫師傅][5945]除了過去被動等大家來找我們來解決大眾居家生活的水電問題外，現在也想主動幫助大家擁有美好的生活空間，提出居家加值服務－－牆面彩繪，讓大家可以家裡環境好還要更好。
 

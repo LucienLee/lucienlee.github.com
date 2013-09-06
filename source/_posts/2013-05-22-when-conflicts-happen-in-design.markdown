@@ -3,7 +3,7 @@ layout: post
 title: "使用者沒你想像的這麼單純"
 date: 2013-05-22 20:58
 comments: true
-categories: [設計原則, 人機互動]
+categories: [設計方法, 人機互動]
 tags: [persona, 設計衝突]
 ---
 <a href="http://www.flickr.com/photos/safcircocreativo/4066567809/"><img src="http://farm3.staticflickr.com/2455/4066567809_bc55e7daaa_z.jpg" width="640" height="498"></a>
