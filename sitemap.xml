@@ -2,15 +2,15 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://selfecy.com/blog/2013/03/25/git_workflow/</loc>
-        <lastmod>2013-09-05T02:50:44+08:00</lastmod>
+        <lastmod>2013-09-06T16:56:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://selfecy.com/blog/2013/04/25/how-to-make-the-edm/</loc>
-        <lastmod>2013-09-05T02:50:44+08:00</lastmod>
+        <lastmod>2013-09-06T16:57:13+08:00</lastmod>
     </url>
     <url>
         <loc>http://selfecy.com/blog/2013/05/22/when-conflicts-happen-in-design/</loc>
-        <lastmod>2013-09-05T02:50:44+08:00</lastmod>
+        <lastmod>2013-09-06T17:08:31+08:00</lastmod>
     </url>
     <url>
         <loc>http://selfecy.com/blog/2013/07/10/aws-ec2-kuai-su-lian-xian-fang-fa/</loc>
@@ -23,12 +23,16 @@
         <lastmod>2013-09-05T02:50:44+08:00</lastmod>
     </url>
     <url>
+        <loc>http://selfecy.com/blog/2013/09/06/how-to-use-gird-systems-to-design-web/</loc>
+        <lastmod>2013-09-07T00:35:06+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://selfecy.com/about/</loc>
         <lastmod>2013-08-17T20:09:50+08:00</lastmod>
     </url>
     <url>
         <loc>http://selfecy.com/blog/archives/</loc>
-        <lastmod>2013-08-17T19:33:20+08:00</lastmod>
+        <lastmod>2013-09-07T00:35:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://selfecy.com/blog/categories/</loc>
@@ -36,7 +40,7 @@
     </url>
     <url>
         <loc>http://selfecy.com/</loc>
-        <lastmod>2013-08-17T19:33:20+08:00</lastmod>
+        <lastmod>2013-09-07T00:35:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://selfecy.com/robots.txt</loc>

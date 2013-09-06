@@ -4,7 +4,7 @@
   <title><![CDATA[Self Efficacy]]></title>
   <link href="http://selfecy.com/atom.xml" rel="self"/>
   <link href="http://selfecy.com/"/>
-  <updated>2013-09-05T02:55:33+08:00</updated>
+  <updated>2013-09-07T00:36:05+08:00</updated>
   <id>http://selfecy.com/</id>
   <author>
     <name><![CDATA[Lucien Lee]]></name>
@@ -12,6 +12,136 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[用 grid system 來設計你的網頁]]></title>
+    <link href="http://selfecy.com/blog/2013/09/06/how-to-use-gird-systems-to-design-web/"/>
+    <updated>2013-09-06T16:47:00+08:00</updated>
+    <id>http://selfecy.com/blog/2013/09/06/how-to-use-gird-systems-to-design-web</id>
+    <content type="html"><![CDATA[<p><img src="https://lh4.googleusercontent.com/-prmT68SGo_Y/UinLMxd3JEI/AAAAAAAAAbg/Ch62cIxQy6Q/w663-h464-no/960_grid_12_col.png" alt="" /></p>
+
+<h2>前言</h2>
+
+<p>現今網頁製作上使用 <strong>grid system</strong> （栅格系统）已經十分普遍，即使沒有聽過 grid system ，只要你使用過熱門前端框架－－<a href="http://getbootstrap.com/">twitter Bootstrap</a> 或是 <a href="http://foundation.zurb.com/">Zurb Foundation</a>， 其實你背後就已經使用過了 grid system 。<br/>
+為什麼 grid system 會這麼普遍的原因是它提供給我們了富有彈性並方便的網頁排版及模組化方法，也提供了網頁設計師與前端工程師共同溝通的語彙。
+對我來說，建立網頁設計師與前端工程師共同的溝通模式是很重要的。目前在前端工程已經有相當多 grid system framework ，這個觀念在前端已經是相當普遍。但從平面設計師轉換到網頁設計師的人，一開始必須重新建立網頁排版的概念，不論是學習設計適應各種大小螢幕的設計還是建立網頁資訊流（ Normal flow ）的概念， grid system 可以幫助設計師有所依歸。
+這篇文章將會簡介 grid system 以及如何在 illustrator 設計 wireframe 或是視覺稿時運用自己的 grid system 。</p>
+
+<!-- more -->
+
+
+<h2>什麼是 grid system 柵格系統</h2>
+
+<p>grid system 其實是一種平面設計方法與風格，它藉由固定的格子切割版面來設計佈局。就如下圖所示：</p>
+
+<p><a href="http://www.flickr.com/photos/jasonprini/377655327/" title="Flickr 上 Jason Prini 的 Grid systems in graphic design"><img src="http://farm1.staticflickr.com/164/377655327_e4af2afc60_z.jpg?zz=1" width="640" height="480" alt="Grid systems in graphic design"></a></p>
+
+<p>grid system 的歷史可以從17世紀說起，根據 Wikipedia <a href="http://zh.wikipedia.org/w/index.php?title=%E6%A0%85%E6%A0%BC%E8%AE%BE%E8%AE%A1&amp;variant=zh-hant">柵格系統</a> 的介紹，它是一開始字體設計的方法－－</p>
+
+<blockquote><p>1629年，法王路易十四命令成立一個管理印刷的皇家特別委員會，由數學家尼古拉斯·加宗（Nicolas Jaugeon）擔任領導。委員會提出了新字體設計建議：以羅馬體為基礎，採用方格為設計依據，每個字體方格分為64個基本方格單位，每個方格單位再分成36小格，這樣，一個印刷版面就由2304個小格組成。這是世上最早對字體和版面進行科學實驗的活動。也是柵格系統的雛形。</p></blockquote>
+
+<p>而之後二十世紀初現代主義萌生，此時工業革命成熟人們也進入機械的時代，但科技的進步同時也帶來一次大戰的毀滅，讓許多人生活貧困與物質匱乏。這讓此時的設計師對過去提出批判，並萌生現代主義。
+而現代主義中的包浩斯( Bauhaus ) 風格追求規律理性、極簡化、功能主義的設計風格，這樣極簡的形隨機能風格，延續到了 20 世紀中期的瑞士設計風格 （ Swiss Design ）並發揚光大。由於強調極簡不使用裝飾， Swiss Design 十分強調文字編排來表現，此時網格系統在平面設計被大量使用，很快地就被推廣到全世界。</p>
+
+<p><img src="https://lh6.googleusercontent.com/-TOWlM2-pcvo/Uim8FPwCjRI/AAAAAAAAAaw/BxU08vVRkEY/w581-h454-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%25887.25.38.png" alt="Swiss Design from www.swissted.com" /></p>
+
+<p>我們可以從中理解到 grid system 本質上就是追求對齊、理性，這延續到網頁設計中，變成一種<em>以規律的格線來做網頁佈局</em>的方法。</p>
+
+<h2>在網頁中的 grid system</h2>
+
+<p>運用在網頁的 grid system 是把一定寬度的頁面切割成數欄，並且欄與欄之間留有間隙。我們網頁上每個元素區塊，依著所需的寬度欄數由上而下排版，比如下圖是有名 <a href="http://960.gs/">960 grid</a>，它把 960px 寬的區塊切成 12 欄，而我們排版時就依所需的大小對齊欄線。</p>
+
+<p><img src="https://lh4.googleusercontent.com/-prmT68SGo_Y/UinLMxd3JEI/AAAAAAAAAbg/Ch62cIxQy6Q/w663-h464-no/960_grid_12_col.png" alt="Example with 960 grid" /></p>
+
+<p>由上面的例子我們可以很清楚 grid system 如何使用，但如果我們需要自己設計 grid system 我們必須了解 grid system 的組成。grid system 主要是由欄（column）與間隙（ gutter ）所組成，另外有的時候我們並不會把元素填滿整個頁面，會在兩旁留白（grid padding），最後所有的欄、間隙與留白的寬度加總起來要等於預計設計頁面的總寬。</p>
+
+<p><img src="https://lh5.googleusercontent.com/-PDuCRVnEXn4/UinVvnO77rI/AAAAAAAAAes/gPxb6K32D1E/w663-h435-no/grid.png" alt="grid system 的組成元素" /></p>
+
+<p>整個 grid system 的計算公式如下：</p>
+
+<pre><code>Total width = grid padding × 2 + ( column width + gutter width )× number of column - gutter width
+</code></pre>
+
+<p>公式最後要再減一個間隙的理由是間隙會比欄少一個，就像植樹問題一樣。以 960 grid 舉例來說， 960 grid 的各項數字是：</p>
+
+<ul>
+<li>欄寬：60 px</li>
+<li>間隙：20 px</li>
+<li>留白：10 px</li>
+</ul>
+
+
+<p>套用公式的結果：</p>
+
+<pre><code>960 = 10 × 2 + ( 60 +20 ) × 12 - 20  
+</code></pre>
+
+<h4>為什麼要在網頁設計裡使用 grid system</h4>
+
+<p>了解了網頁中的 grid system 是什麼以後，但為什麼要使用 grid 來設計網頁呢？
+我認為理由有三點：</p>
+
+<ol>
+<li>增加可讀性<br/>
+使用了格線佈局可以建立對齊規律的排版，我們可以把過去運用在平面設計的對齊技巧使用在網頁身上，我們可以藉由分欄拆出不同的區塊來放不同的內容，但同時個區塊間仍然整齊規律。</li>
+<li>建立網頁設計師與前端工程師的共通語彙<br/>
+當設計師與工程師都共同使用 grid system ，那在產品開發中可以從線框（ wireframe）開始，視覺設計稿到最後前端 CSS 都一脈相承，不需轉換任何比例尺寸，可以加快開發速度以及降低設計與程式的溝通成本。</li>
+<li>幫助設計師建立適應不同大小螢幕的佈局<br/>
+網頁設計跟平面設計最大的差別之一在於，網頁的<strong>畫布</strong>不是固定大小。平面設計常常是有一個目標大小的版面，比如說印出來的大小。設計師是直接根據最後輸出的大小在畫布上設計；然而網頁會遇到使用者螢幕大小不同，一個網頁必須自己適應在不同的螢幕上，過去固定大小的設計並不適用於流動大小的網頁了！ 設計的單位從 pixel 變成 ％，以相對比例來設計佈局。而 grid system 提供了某種程度的比例概念，可以讓設計師比較可以做到自適應式設計（ Responsive design ）。</li>
+</ol>
+
+
+<h2>在 illustrator 中運用 grid system 設計你的網頁</h2>
+
+<p>在平面設計的時候我們本來就會使用參考線（ guide ）來幫助我們，而我們在網頁設計中也是利用參考線來幫助我們建立 grid 。這裡我們以 <a href="http://onepcssgrid.mattimling.com/">One% CSS Grid</a> 為例，我們來建立它的 grid 1200版本。
+這個 grid system 是 12 欄佈局，每欄寬度為總寬 5.5%、間隙為總寬 3%。在螢幕 1280 px 的情況，實際像素大小如下：</p>
+
+<ul>
+<li>欄寬：66 px</li>
+<li>間隙：36 px</li>
+<li>留白：46 px</li>
+<li>扣掉留白總寬： 1188 px</li>
+</ul>
+
+
+<p>以下會教大家如何在 illustrator 建立這樣的 grid system 參考線：</p>
+
+<p>（Windows 用戶請把以下指令的 <code>Cmd</code> 當成 <code>Ctrl</code>）</p>
+
+<ol>
+<li><p>首先我們先建立一個寬 1280 px 的畫布，高度隨自己喜好。（示範中我使用 1600 px ）。將目前圖層取名為 <code>Grid</code>，同時打開尺規（Rule），幫助我們設計時抓大小。打開的方式是 <code>Cmd + R</code> 或是找到選單中 <code>View &gt; Rules &gt; Show Rulers</code>。<br/>
+<img src="https://lh4.googleusercontent.com/-cGyBxkiy15s/UinpDq6-mGI/AAAAAAAAAfc/aOj5ylVHnrA/w637-h360-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258810.38.09.png" alt="" /></p></li>
+<li><p>使用左邊面板的矩形工具，畫出一個與畫布一樣大的矩形蓋在畫布上。<br/>
+<img src="https://lh6.googleusercontent.com/-1yxkdajE1Tc/Uinq7svc9KI/AAAAAAAAAf4/Vxnh-UIrnL0/w646-h201-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258810.46.48.png" alt="" /></p></li>
+<li><p>用選取工具選中剛剛的矩形後，在選單列點選 <code>Object &gt; Path &gt;  Split Into Grid</code> （<code>物件 &gt; 路徑 &gt; 列與行</code>） ，開啟工作對話窗。<br/>
+<img src="https://lh5.googleusercontent.com/-Zs_xJwbf0rk/UinuHAn5-QI/AAAAAAAAAhQ/dpdUdZrNHp8/w436-h255-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258811.00.28.png" alt="" /></p></li>
+<li><p>將選單各欄位如圖所示輸入算好的數值。<br/>
+<img src="https://lh4.googleusercontent.com/-ud-oKxqCVQ4/Uint6V5oDAI/AAAAAAAAAg8/cTca9fqrItU/w530-h367-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258810.59.18.png" alt="" /></p></li>
+<li><p>在選取所有小矩形的狀態，按下 <code>Cmd + G</code> 把所有矩形群組起來，再使用對齊工具將所有東西置中。<br/>
+<img src="https://lh6.googleusercontent.com/-Mi0Bw6nc_oY/Uinvq_JYaKI/AAAAAAAAAh4/zREgOs5_i10/w542-h379-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258811.03.21.png" alt="" /></p></li>
+<li><p>一樣在選取矩形的狀態，按下 <code>Cmd + 5</code> 或是點選 <code>View &gt; Guide &gt; Make Guide</code>，把所有小矩形變成參考線。<br/>
+<img src="https://lh4.googleusercontent.com/-8yLAILePKBg/Uin2Qo4t0RI/AAAAAAAAAj4/8MEhk3zeSTo/w593-h193-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258811.34.32.png" alt="" /></p></li>
+<li><p>此時你就會得到 grid system 的參考線了，你可以順便鎖定參考線以防誤刪。鎖定的方法是<code>Cmd + Alt + ;</code> 或是點選 <code>View &gt; Guide &gt; Lock Guide</code>。<br/>
+<img src="https://lh5.googleusercontent.com/-THCAX56ttKk/Uin28MKqNhI/AAAAAAAAAkI/A-M1TvZFmgM/w709-h222-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258811.37.54.png" alt="" /></p></li>
+<li><p>你可以藉由這些格線來設計你要的版面，我先以不同方塊來區分元素版位。<br/>
+<img src="https://lh5.googleusercontent.com/-FTV1YEfdnyc/Uin577Go0oI/AAAAAAAAAkc/5nzv5sexLFQ/w461-h569-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-06+%25E4%25B8%258B%25E5%258D%258811.50.51.png" alt="" /></p></li>
+<li><p>最後填上一些細節，就可以完成最基礎的線框稿。<br/>
+<img src="https://lh3.googleusercontent.com/-Z8j_xqLHzao/Uin-Q4Snq_I/AAAAAAAAAkw/7FZ0AoP-ECw/w461-h571-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2013-09-07+%25E4%25B8%258A%25E5%258D%258812.09.13.png" alt="" /></p></li>
+</ol>
+
+
+<h2>動手試試看吧！</h2>
+
+<p>事實上在設計階段建立 grid system 並不難，只要算好你想要用的 grid 大小就可以讓軟體幫你生出格線，之後排版對齊就可以很方便。如果不知道要使用什麼樣的 grid 你可以去參考網路上的 grid system framework 像是 <a href="http://960.gs/">960.gs</a>、 <a href="http://www.blueprintcss.org/">Blueprint</a> 、<a href="http://goldengridsystem.com/">Golden Grid System</a>……有非常多的框架可以選擇，趕快找一個 grid system 來實作看看吧！</p>
+
+<h3>參考資料</h3>
+
+<p><a href="http://thenextweb.com/dd/2012/09/29/how-wireframe-two-web-layouts-illustrator-using-960-gs/">How to wireframe two web layouts in Illustrator using 960.gs</a><br/>
+<a href="http://blog.justfont.com/2013/05/flat-design-and-typography/">justfont 扁平化設計與字型學</a><br/>
+<a href="http://onepcssgrid.mattimling.com/">One % CSS Grid</a><br/>
+<a href="http://www.swissted.com">swissted</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[讓Octopress有中文分類及側邊列]]></title>
@@ -476,7 +606,7 @@ $ vim .ssh/authorized_keys
 
 <h2>前言</h2>
 
-<p><em><a href="http://selfecy.com/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+<p><em><a href="http://selfecy.com/tags/rdshui-dian-gong-bu-hui-xiu-shui-guan/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
 
 <p><a href="http://5945.tw">5945呼叫師傅</a>除了過去被動等大家來找我們來解決大眾居家生活的水電問題外，現在也想主動幫助大家擁有美好的生活空間，提出居家加值服務－－牆面彩繪，讓大家可以家裡環境好還要更好。</p>
 
@@ -578,7 +708,7 @@ $ vim .ssh/authorized_keys
 
 <h2>前言</h2>
 
-<p><em><a href="http://selfecy.com/blog/categories/rd%E6%B0%B4%E9%9B%BB%E5%B7%A5%E4%B8%8D%E6%9C%83%E4%BF%AE%E6%B0%B4%E7%AE%A1/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
+<p><em><a href="http://selfecy.com/tags/rdshui-dian-gong-bu-hui-xiu-shui-guan/">RD水電工不會修水管</a>專欄是我在5945呼叫師傅作為RD實習生的學習分享。</em></p>
 
 <p>Git是一種分散式的版本控制系統，版本控制對一個開發團隊來說是不可或缺的工具。他提供了一個乾淨的方法，讓團隊內的開發、除錯、測試實驗性的新功能，不會相互干擾。另外對個人來說，他可以在你程式改爛以後，幫你時光倒流回到之前的樣子。
 總結來說Git有以下幾點特色：</p>
