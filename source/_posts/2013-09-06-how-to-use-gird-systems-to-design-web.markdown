@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "用 grid system 來設計你的網頁"
+title: "使用 grid system 來設計你的網頁"
 date: 2013-09-06 16:47
 comments: true
 categories: [前端浮華, 視覺設計]
